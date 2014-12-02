@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="MYDATALOGGER_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MYDATALOGGER_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MYDATALOGGER_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MYDATALOGGER_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="MYDATALOGGER_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="MYDATALOGGER_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="MYDATALOGGER_ADMIN"/>
+</entity-engine-xml>
