@@ -8,5 +8,66 @@
     <description>None</description>
     <copyright></copyright>
     <version></version>
+    <entity entity-name="SerialInterface"
+            package-name="com.ges_bg.datalogger"
+            title="Serial Interface Entity">
+      <field name="SerialId" type="id-ne"></field>
+      <field name="SerialName" type="name"></field>
+      
+      <field name="Note" type="very-short"></field>
+      <prim-key field="SerialId"/>
+    </entity>
+
+    <entity entity-name="Device_PV"
+            package-name="com.ges_bg.datalogger"
+            title="Device Entity">
+      <field name="DeviceId" type="id-ne"></field>
+      <field name="DeviceType" type="id-ne"></field>
+      <field name="DeviceModel" type="id-ne"></field>
+      <field name="Manufacturer" type="name"></field>
+      <field name="SerialInterface" type="very-short"></field>
+      <field name="SerialInterfaceAddress" type="very-short"></field>
+      <field name="PositionLon" type="very-short"></field>
+      <field name="PositionLat" type="very-short"></field>
+      <field name="ParentDevice" type="very-short"></field>
+      
+      <prim-key field="DeviceId"/>
+      
+      <relation type="one" fk-name="DEVICE_SERIAL" rel-entity-name="SerialInterface">
+      <key-map field-name="SerialId"/>
+      </relation>
+      
+      <relation type="one" fk-name="DEVICE_TYPE" rel-entity-name="DeviceTypes">
+      <key-map field-name="DeviceTypeId"/>
+      </relation>
+      
+    </entity>
+
+    <entity entity-name="DeviceTypes"
+            package-name="com.ges_bg.datalogger"
+            title="Device Types">
+      <field name="DeviceTypeId" type="id-ne"></field>
+      <field name="DeviceTypeName" type="name"></field>
+      
+      <prim-key field="DeviceTypeId"/>
+    </entity>
+
+    <entity entity-name="Manufacturer"
+            package-name="com.ges_bg.datalogger"
+            title="Manufacturers">
+      <field name="ManufacturerId" type="id-ne"></field>
+      <field name="ManufacturerName" type="name"></field>
+      
+      <prim-key field="ManufacturerId"/>
+    </entity>
+
+    <entity entity-name="DeviceModel"
+            package-name="com.ges_bg.datalogger"
+            title="Device Models">
+      <field name="DeviceModelId" type="id-ne"></field>
+      <field name="DeviceModelName" type="name"></field>
+      
+      <prim-key field="DeviceModelId"/>
+    </entity>
 
 </entitymodel>
