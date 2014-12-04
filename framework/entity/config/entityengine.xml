@@ -392,9 +392,9 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <read-data reader-name="ext-demo"/>
         <inline-jdbc
                 jdbc-driver="com.mysql.jdbc.Driver"
-                jdbc-uri="jdbc:mysql://10.1.1.8/ofbiz?autoReconnect=true"
-                jdbc-username="ofbiz"
-                jdbc-password="ofbiz"
+                jdbc-uri="jdbc:mysql://10.1.1.8/mokresh?autoReconnect=true"
+                jdbc-username="res"
+                jdbc-password="prizma"
                 isolation-level="ReadCommitted"
                 pool-minsize="2"
                 pool-maxsize="250"
