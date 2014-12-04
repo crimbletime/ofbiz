@@ -359,7 +359,7 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <inline-jdbc
                 jdbc-driver="com.mysql.jdbc.Driver"
                 jdbc-uri="jdbc:mysql://127.0.0.1/ofbiz?autoReconnect=true"
-                jdbc-username="ofbiz"
+                jdbc-username="root"
                 jdbc-password="prizma"
                 isolation-level="ReadCommitted"
                 pool-minsize="2"
