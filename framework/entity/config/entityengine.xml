@@ -56,10 +56,8 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <group-map group-name="com.ges_bg.scada" datasource-name="scadamysql"/>
         <group-map group-name="org.ofbiz.olap" datasource-name="localderbyolap"/>
         <group-map group-name="org.ofbiz.tenant" datasource-name="localderbytenant"/>
-        <!-- <group-map group-name="org.ofbiz" datasource-name="localmysql"/>
         <group-map group-name="org.ofbiz.olap" datasource-name="localmysqlolap"/>
         <group-map group-name="org.ofbiz.tenant" datasource-name="localmysqltenant"/>  -->
-        <!-- <group-map group-name="org.ofbiz" datasource-name="localpostnew"/>
         <group-map group-name="org.ofbiz.olap" datasource-name="localpostolap"/>
         <group-map group-name="org.ofbiz.tenant" datasource-name="localposttenant"/> -->
     </delegator>
