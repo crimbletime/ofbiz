@@ -1,29 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations
-under the License.
--->
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+	license agreements. See the NOTICE file distributed with this work for additional 
+	information regarding copyright ownership. The ASF licenses this file to 
+	you under the Apache License, Version 2.0 (the "License"); you may not use 
+	this file except in compliance with the License. You may obtain a copy of 
+	the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required 
+	by applicable law or agreed to in writing, software distributed under the 
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
+	OF ANY KIND, either express or implied. See the License for the specific 
+	language governing permissions and limitations under the License. -->
 
 <entitygroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitygroup.xsd">
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitygroup.xsd">
 
-    <!-- ========================================================= -->
-    <!-- com.ges_bg.scada -->
-    <!-- ========================================================= -->
-    <entity-group group="com.ges_bg.scada" entity="Tenant"/>
-    <entity-group group="com.ges_bg.scada" entity="TenantDataSource"/>
+	<!-- ========================================================= -->
+	<!-- com.ges_bg.scada -->
+	<!-- ========================================================= -->
+		<entity-group group="com.ges_bg.scada" entity="BreznikDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="BreznikDailyYieldBackup" />
+		<entity-group group="com.ges_bg.scada" entity="BreznikEdc" />
+		<entity-group group="com.ges_bg.scada" entity="BreznikForecast" />
+		<entity-group group="com.ges_bg.scada" entity="BreznikHourslices" />
+		<entity-group group="com.ges_bg.scada" entity="BreznikThs" />
+		<entity-group group="com.ges_bg.scada" entity="DispachingCenters" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaAll" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaBktp1" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaBktp2" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaBktp3" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaBktp4" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaDailyYieldBackup" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaDy" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaEdc" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaEvn" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaForecast" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaForecastError" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaGuarantee" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaHourslices" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaHourslices1" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaHourslices2" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaHourslices3" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaHourslices4" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaPvForecast" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaThs" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaZru1mw" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaZru1mwNew" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaZru2mw" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaZru3mw" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaZru4mw" />
+		<entity-group group="com.ges_bg.scada" entity="GmahalaZruSn" />
+		<entity-group group="com.ges_bg.scada" entity="GornaMahalaPerformance" />
+		<entity-group group="com.ges_bg.scada" entity="GroupTable" />
+		<entity-group group="com.ges_bg.scada" entity="KapatovoBktp1Lv" />
+		<entity-group group="com.ges_bg.scada" entity="KapatovoBktp2Lv" />
+		<entity-group group="com.ges_bg.scada" entity="KapatovoHourslices" />
+		<entity-group group="com.ges_bg.scada" entity="KapatovoHourslices1" />
+		<entity-group group="com.ges_bg.scada" entity="KapatovoHourslices2" />
+		<entity-group group="com.ges_bg.scada" entity="MeterBreznik" />
+		<entity-group group="com.ges_bg.scada" entity="MeterPcs1" />
+		<entity-group group="com.ges_bg.scada" entity="MeterPcs2" />
+		<entity-group group="com.ges_bg.scada" entity="MeterPcs3" />
+		<entity-group group="com.ges_bg.scada" entity="MeterPcs4" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshAll" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshDailyYieldBackup" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshDy" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshEdc" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshEvn" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshForecast" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshForecastError" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshHourslices1" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshHourslices2" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshHourslices3" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshHourslices4" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshMeteo" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshPvForecast" />
+		<entity-group group="com.ges_bg.scada" entity="MokreshThs" />
+		<entity-group group="com.ges_bg.scada" entity="SbucheForecastError" />
+		<entity-group group="com.ges_bg.scada" entity="SbuchePvForecast" />
+		<entity-group group="com.ges_bg.scada" entity="ServiceCenters" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenAll" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenBktp1Mv" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenBktp2Mv" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenDailyYieldBackup" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenEdc" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenEvn" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenForecast" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenForecastError" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenHourslices1" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenHourslices2" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenPvForecast" />
+		<entity-group group="com.ges_bg.scada" entity="SlivenThs" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsAll" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsBktp1Lv" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsBktp1Mv" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsBktp2Lv" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsBktp2Mv" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsDailyYieldBackup" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsEdc" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsEvn" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsForecast" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsForecastError" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsHourslices1" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsHourslices2" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsPvForecast" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsThs" />
+		<entity-group group="com.ges_bg.scada" entity="SredetsZruTotal" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheAll" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheBktp1Mv" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheBktp2Mv" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheBktp3Mv" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheDailyYieldBackup" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheEdc" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheEvn" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheForecast" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheHourslices1" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheHourslices2" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheHourslices3" />
+		<entity-group group="com.ges_bg.scada" entity="StudenobucheThs" />
+		<entity-group group="com.ges_bg.scada" entity="TizbaAll" />
+		<entity-group group="com.ges_bg.scada" entity="TizbaBktp1Lv" />
+		<entity-group group="com.ges_bg.scada" entity="TizbaDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="ValchedramDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="ValchedramDailyYieldBackup" />
+		<entity-group group="com.ges_bg.scada" entity="ValchedramEdc" />
+		<entity-group group="com.ges_bg.scada" entity="ValchedramForecast" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumAll" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumEvn" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumForecastError" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumHourslices1" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumHourslices2" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumNorth" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumPvForecast" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumSouth" />
+		<entity-group group="com.ges_bg.scada" entity="VdrumThs" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoAll" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp1Lv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp1Mv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp2Lv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp2Mv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp3Lv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp3Mv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp4Lv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp4Mv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp5Lv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoBktp5Mv" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoDailyYield" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoDailyYieldBackup" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoEdc" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoEvn" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoForecast" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoForecastError" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoHourslices1" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoHourslices2" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoHourslices3" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoHourslices4" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoHourslices5" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoPvForecast" />
+		<entity-group group="com.ges_bg.scada" entity="YerusalimovoThs" />
 </entitygroup>
