@@ -40,6 +40,7 @@ under the License.
     <entity entity-name="BreznikDailyYield"
             package-name=""
             title="None"
+            no-auto-stamp="true"
             copyright="Copyright 2001-2014 The Apache Software Foundation">
       <field name="activeenergyconsumed" type="numeric"></field>
       <field name="reactiveenergyproduced" type="numeric"></field>
@@ -51,6 +52,7 @@ under the License.
     <entity entity-name="BreznikDailyYieldBackup"
             package-name=""
             title="None"
+            no-auto-stamp="true"
             copyright="Copyright 2001-2014 The Apache Software Foundation">
       <field name="activeenergyconsumed" type="numeric"></field>
       <field name="reactiveenergyproduced" type="numeric"></field>
