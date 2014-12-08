@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the ProdReport Component." permissionId="PRODREPORT_VIEW"/>
+    <SecurityPermission description="Create operations in the ProdReport Component." permissionId="PRODREPORT_CREATE"/>
+    <SecurityPermission description="Update operations in the ProdReport Component." permissionId="PRODREPORT_UPDATE"/>
+    <SecurityPermission description="Delete operations in the ProdReport Component." permissionId="PRODREPORT_DELETE"/>
+    <SecurityPermission description="ALL operations in the ProdReport Component." permissionId="PRODREPORT_ADMIN"/>
+
+    <SecurityGroupPermission groupId="SUPER" permissionId="PRODREPORT_ADMIN"/>
+
+</entity-engine-xml>

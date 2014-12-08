@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="PRODREPORT_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="PRODREPORT_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="PRODREPORT_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="PRODREPORT_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="PRODREPORT_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="PRODREPORT_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="PRODREPORT_ADMIN"/>
+</entity-engine-xml>
