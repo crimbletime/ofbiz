@@ -1,12 +1,3415 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
-    <!-- ========================================================= -->
-    <!-- ======================== Defaults ======================= -->
-    <!-- ========================================================= -->
-    <title>Entity of ProdReport Component</title>
-    <description>None</description>
-    <copyright></copyright>
-    <version></version>
 
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
+  <!-- ========================================================= -->
+  <!-- ======================== Defaults ======================= -->
+  <!-- ========================================================= -->
+    <title>Entity of an Apache Open For Business Project (Apache OFBiz) Component</title>
+    <description>None</description>
+    <copyright>Copyright 2001-2012 The Apache Software Foundation</copyright>
+    <author>None</author>
+    <version>1.0</version>
+
+  <!-- ========================================================= -->
+  <!-- ======================== Data Model ===================== -->
+  <!-- The modules in this file are as follows:                  -->
+  <!-- ========================================================= -->
+
+  <!-- ========================================================= -->
+  <!-- No Package Name -->
+  <!-- ========================================================= -->
+
+    <entity entity-name="Alarmsounds"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="sound" type="invalid-LONGBLOB:2147483647:0"></field>
+      <field name="priority" type="invalid-INT UNSIGNED:10:0"></field>
+    </entity>
+    <entity entity-name="AlertLog"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="stateSeverity" type="numeric"></field>
+      <field name="alertLogNdx" type="numeric"></field>
+      <field name="stateName" type="long-varchar"></field>
+      <field name="displaypath" type="long-varchar"></field>
+      <field name="clearedValue" type="invalid-DOUBLE:22:0"></field>
+      <field name="clearedTimestamp" type="date-time"></field>
+      <field name="activeTimestamp" type="date-time"></field>
+      <field name="ackUser" type="long-varchar"></field>
+      <field name="system" type="long-varchar"></field>
+      <field name="path" type="long-varchar"></field>
+      <field name="alertLogId" type="numeric"></field>
+      <field name="ackTimestamp" type="date-time"></field>
+      <field name="activeValue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="alertLogNdx"/>
+    </entity>
+    <entity entity-name="AuditEvents"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="actionTarget" type="long-varchar"></field>
+      <field name="actionValue" type="long-varchar"></field>
+      <field name="auditEventsId" type="numeric"></field>
+      <field name="actorHost" type="long-varchar"></field>
+      <field name="eventTimestamp" type="date-time"></field>
+      <field name="originatingSystem" type="long-varchar"></field>
+      <field name="action" type="long-varchar"></field>
+      <field name="originatingContext" type="numeric"></field>
+      <field name="actor" type="long-varchar"></field>
+      <field name="statusCode" type="numeric"></field>
+      <prim-key field="auditEventsId"/>
+    </entity>
+    <entity entity-name="BreznikDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="maxpower" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="BreznikDailyYieldBackup"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="maxpower" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="BreznikEdc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="breznikEdcNdx" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="breznikEdcNdx"/>
+    </entity>
+    <entity entity-name="BreznikForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="breznikForecastNdx" type="numeric"></field>
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="breznikForecastNdx"/>
+    </entity>
+    <entity entity-name="BreznikHourslices"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="BreznikThs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="DispachingCenters"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="address2" type="very-long"></field>
+      <field name="location" type="very-long"></field>
+      <field name="manager" type="invalid-BIGINT UNSIGNED:20:0"></field>
+      <field name="name" type="very-long"></field>
+      <field name="mob2" type="very-long"></field>
+      <field name="mob1" type="very-long"></field>
+      <field name="address" type="very-long"></field>
+      <field name="tel1" type="very-long"></field>
+      <field name="tel2" type="very-long"></field>
+      <field name="key" type="invalid-BIGINT:19:0"></field>
+      <field name="type" type="very-long"></field>
+      <prim-key field="key"/>
+    </entity>
+    <entity entity-name="GmahalaAll"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bktp1" type="floating-point"></field>
+      <field name="bktp2" type="floating-point"></field>
+      <field name="bktp3" type="floating-point"></field>
+      <field name="bktp4" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="GmahalaBktp1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="gmahalaBktp1Ndx" type="numeric"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaBktp1Ndx"/>
+    </entity>
+    <entity entity-name="GmahalaBktp2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="gmahalaBktp2Ndx" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaBktp2Ndx"/>
+    </entity>
+    <entity entity-name="GmahalaBktp3"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="gmahalaBktp3Ndx" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaBktp3Ndx"/>
+    </entity>
+    <entity entity-name="GmahalaBktp4"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="gmahalaBktp4Ndx" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaBktp4Ndx"/>
+    </entity>
+    <entity entity-name="GmahalaDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="GmahalaDailyYieldBackup"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="GmahalaDy"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="invalid-BIGINT:19:0"></field>
+      <field name="yeildDate" type="date"></field>
+    </entity>
+    <entity entity-name="GmahalaEdc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="gmahalaEdcNdx" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="gmahalaEdcNdx"/>
+    </entity>
+    <entity entity-name="GmahalaEvn"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="unbalGes" type="invalid-DOUBLE:22:0"></field>
+      <field name="generation" type="invalid-DECIMAL:39:4"></field>
+      <field name="dateSlice" type="date-time"></field>
+      <field name="unbalEvn" type="invalid-DECIMAL:45:9"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="GmahalaForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="gmahalaForecastNdx" type="numeric"></field>
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="gmahalaForecastNdx"/>
+    </entity>
+    <entity entity-name="GmahalaForecastError"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="unbalGes" type="invalid-DOUBLE:22:0"></field>
+      <field name="slice" type="date-time"></field>
+      <field name="unbalEvn" type="invalid-DECIMAL:23:9"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+      <field name="pctRelError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="GmahalaGuarantee"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <field name="gmahalaGuaranteeNdx" type="numeric"></field>
+      <prim-key field="gmahalaGuaranteeNdx"/>
+    </entity>
+    <entity entity-name="GmahalaHourslices"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="datetime" type="date-time"></field>
+    </entity>
+    <entity entity-name="GmahalaHourslices1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="GmahalaHourslices2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="GmahalaHourslices3"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="GmahalaHourslices4"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="GmahalaPvForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="forecast" type="invalid-DOUBLE:22:0"></field>
+      <field name="hourSlice" type="date-time"></field>
+      <prim-key field="hourSlice"/>
+    </entity>
+    <entity entity-name="GmahalaThs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="GmahalaZru1mw" table-name="GMAHALA_ZRU_1MW"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="gmahalaZru1mwNdx" col-name="GMAHALA_ZRU_1MW_NDX" type="numeric"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaZru1mwNdx"/>
+    </entity>
+    <entity entity-name="GmahalaZru1mwNew" table-name="GMAHALA_ZRU_1MW_NEW"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="gmahalaZru1mwNewNdx" col-name="GMAHALA_ZRU_1MW_NEW_NDX" type="numeric"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaZru1mwNewNdx"/>
+    </entity>
+    <entity entity-name="GmahalaZru2mw" table-name="GMAHALA_ZRU_2MW"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="gmahalaZru2mwNdx" col-name="GMAHALA_ZRU_2MW_NDX" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaZru2mwNdx"/>
+    </entity>
+    <entity entity-name="GmahalaZru3mw" table-name="GMAHALA_ZRU_3MW"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="gmahalaZru3mwNdx" col-name="GMAHALA_ZRU_3MW_NDX" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaZru3mwNdx"/>
+    </entity>
+    <entity entity-name="GmahalaZru4mw" table-name="GMAHALA_ZRU_4MW"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="gmahalaZru4mwNdx" col-name="GMAHALA_ZRU_4MW_NDX" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaZru4mwNdx"/>
+    </entity>
+    <entity entity-name="GmahalaZruSn"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="gmahalaZruSnNdx" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="gmahalaZruSnNdx"/>
+    </entity>
+    <entity entity-name="GornaMahalaPerformance"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="qualityCode" type="numeric"></field>
+      <field name="gornaMahalaPerformanceNdx" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <prim-key field="gornaMahalaPerformanceNdx"/>
+    </entity>
+    <entity entity-name="GroupTable"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="pfLeadTotal" type="invalid-FLOAT:12:0"></field>
+      <field name="counter1" type="invalid-BIGINT:19:0"></field>
+      <field name="counter3" type="invalid-BIGINT:19:0"></field>
+      <field name="phaseRotationOrder" type="invalid-BIGINT:19:0"></field>
+      <field name="counter2" type="invalid-BIGINT:19:0"></field>
+      <field name="v3V31Voltage" type="invalid-BIGINT:19:0"></field>
+      <field name="counter4" type="invalid-BIGINT:19:0"></field>
+      <field name="i1Current" type="invalid-FLOAT:12:0"></field>
+      <field name="vllAvg" type="invalid-BIGINT:19:0"></field>
+      <field name="kvarhExport" type="invalid-BIGINT:19:0"></field>
+      <field name="kwExportTotal" type="invalid-BIGINT:19:0"></field>
+      <field name="pfLagTotal" type="invalid-FLOAT:12:0"></field>
+      <field name="kwhImport" type="invalid-BIGINT:19:0"></field>
+      <field name="pfTotal" type="invalid-FLOAT:12:0"></field>
+      <field name="kwhExport" type="invalid-BIGINT:19:0"></field>
+      <field name="kvaTotal" type="numeric"></field>
+      <field name="kwTotal" type="numeric"></field>
+      <field name="v1V12Voltage" type="invalid-BIGINT:19:0"></field>
+      <field name="kvarL3" type="numeric"></field>
+      <field name="kvarL2" type="numeric"></field>
+      <field name="kvarL1" type="numeric"></field>
+      <field name="pfL1" type="invalid-FLOAT:12:0"></field>
+      <field name="groupTableNdx" type="numeric"></field>
+      <field name="kwImportTotal" type="invalid-BIGINT:19:0"></field>
+      <field name="pfL2" type="invalid-FLOAT:12:0"></field>
+      <field name="kvarTotal" type="numeric"></field>
+      <field name="kwL3" type="numeric"></field>
+      <field name="i3Current" type="invalid-FLOAT:12:0"></field>
+      <field name="kvarImportTotal" type="invalid-BIGINT:19:0"></field>
+      <field name="v2V23Voltage" type="invalid-BIGINT:19:0"></field>
+      <field name="kvaL3" type="numeric"></field>
+      <field name="vlnAvg" type="invalid-BIGINT:19:0"></field>
+      <field name="kwL1" type="numeric"></field>
+      <field name="kwL2" type="numeric"></field>
+      <field name="kvaL1" type="numeric"></field>
+      <field name="kvaL2" type="numeric"></field>
+      <field name="kvarExportTotal" type="invalid-BIGINT:19:0"></field>
+      <field name="ilAvg" type="invalid-BIGINT:19:0"></field>
+      <field name="i2Current" type="invalid-FLOAT:12:0"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="pfL3" type="invalid-FLOAT:12:0"></field>
+      <field name="kvahTotal" type="invalid-BIGINT:19:0"></field>
+      <field name="kvarhImport" type="invalid-BIGINT:19:0"></field>
+      <prim-key field="groupTableNdx"/>
+    </entity>
+    <entity entity-name="KapatovoBktp1Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="kapatovoBktp1LvNdx" type="numeric"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="kapatovoBktp1LvNdx"/>
+    </entity>
+    <entity entity-name="KapatovoBktp2Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="kapatovoBktp2LvNdx" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="kapatovoBktp2LvNdx"/>
+    </entity>
+    <entity entity-name="KapatovoHourslices"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="datetime" type="date-time"></field>
+    </entity>
+    <entity entity-name="KapatovoHourslices1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="KapatovoHourslices2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="LangDb"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bg" type="long-varchar"></field>
+      <field name="en" type="long-varchar"></field>
+      <field name="langDbNdx" type="numeric"></field>
+      <field name="keyword" type="short-varchar"></field>
+      <field name="notes" type="very-long"></field>
+      <prim-key field="langDbNdx"/>
+    </entity>
+    <entity entity-name="LastDate"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="sliven" type="date"></field>
+      <field name="yerusalimovo" type="date"></field>
+      <field name="breznik" type="date"></field>
+      <field name="studenobuche" type="date"></field>
+      <field name="mokresh" type="date"></field>
+      <field name="gmahala" type="date"></field>
+      <field name="sredets" type="date"></field>
+      <field name="valchedram" type="date"></field>
+    </entity>
+    <entity entity-name="MeterBreznik"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i-3avg" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="meterBreznikNdx" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="meterBreznikNdx"/>
+    </entity>
+    <entity entity-name="MeterPcs1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="meterPcs1Ndx" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="meterPcs1Ndx"/>
+    </entity>
+    <entity entity-name="MeterPcs2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="meterPcs2Ndx" type="numeric"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="meterPcs2Ndx"/>
+    </entity>
+    <entity entity-name="MeterPcs3"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="meterPcs3Ndx" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="meterPcs3Ndx"/>
+    </entity>
+    <entity entity-name="MeterPcs4"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="meterPcs4Ndx" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="meterPcs4Ndx"/>
+    </entity>
+    <entity entity-name="MokreshAll"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bktp1" type="floating-point"></field>
+      <field name="bktp2" type="floating-point"></field>
+      <field name="bktp3" type="floating-point"></field>
+      <field name="bktp4" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="MokreshDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="MokreshDailyYieldBackup"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="MokreshDy"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="invalid-BIGINT:19:0"></field>
+      <field name="yeildDate" type="date"></field>
+    </entity>
+    <entity entity-name="MokreshEdc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="mokreshEdcNdx" type="numeric"></field>
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="mokreshEdcNdx"/>
+    </entity>
+    <entity entity-name="MokreshEvn"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="unbalGes" type="invalid-DOUBLE:22:0"></field>
+      <field name="generation" type="invalid-DECIMAL:39:4"></field>
+      <field name="dateSlice" type="date-time"></field>
+      <field name="unbalEvn" type="invalid-DECIMAL:45:9"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="MokreshForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="mokreshForecastNdx" type="numeric"></field>
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="mokreshForecastNdx"/>
+    </entity>
+    <entity entity-name="MokreshForecastError"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slice" type="date-time"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+      <field name="pctRelError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="MokreshHourslices1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="MokreshHourslices2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="MokreshHourslices3"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="MokreshHourslices4"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="MokreshMeteo"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="qualityCode" type="numeric"></field>
+      <field name="windvel" type="invalid-FLOAT:12:0"></field>
+      <field name="tmpamb" type="invalid-FLOAT:12:0"></field>
+      <field name="mokreshMeteoNdx" type="numeric"></field>
+      <field name="extsolirr" type="invalid-FLOAT:12:0"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="intsolirr" type="invalid-FLOAT:12:0"></field>
+      <field name="tmpmdul" type="invalid-FLOAT:12:0"></field>
+      <prim-key field="mokreshMeteoNdx"/>
+    </entity>
+    <entity entity-name="MokreshPvForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="forecast" type="invalid-DOUBLE:22:0"></field>
+      <field name="hourSlice" type="date-time"></field>
+      <prim-key field="hourSlice"/>
+    </entity>
+    <entity entity-name="MokreshThs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="NextDate"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="tizba" type="date"></field>
+      <field name="sliven" type="date"></field>
+      <field name="yerusalimovo" type="date"></field>
+      <field name="breznik" type="date"></field>
+      <field name="studenobuche" type="date"></field>
+      <field name="mokresh" type="date"></field>
+      <field name="gmahala" type="date"></field>
+      <field name="sredets" type="date"></field>
+      <field name="valchedram" type="date"></field>
+    </entity>
+    <entity entity-name="PersonalData"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="addressAdd" type="very-long"></field>
+      <field name="workPlace" type="numeric"></field>
+      <field name="addressCity" type="very-long"></field>
+      <field name="telMobCompany2" type="very-long"></field>
+      <field name="telMobCompany1" type="very-long"></field>
+      <field name="key" type="invalid-MEDIUMINT UNSIGNED:8:0"></field>
+      <field name="responcibleFor" type="very-long"></field>
+      <field name="addressPostcode" type="invalid-SMALLINT UNSIGNED:5:0"></field>
+      <field name="workTime" type="very-long"></field>
+      <field name="jobContract" type="very-long"></field>
+      <field name="midname" type="very-long"></field>
+      <field name="firstname" type="very-long"></field>
+      <field name="location" type="very-long"></field>
+      <field name="addressStreet" type="very-long"></field>
+      <field name="familyname" type="very-long"></field>
+      <field name="jobDescription" type="very-long"></field>
+      <field name="telMobPersonal2" type="very-long"></field>
+      <field name="position" type="very-long"></field>
+      <field name="telMobPersonal1" type="very-long"></field>
+      <prim-key field="key"/>
+    </entity>
+    <entity entity-name="PowerPlants"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="name" type="very-long"></field>
+      <field name="locationE" type="invalid-DOUBLE:22:0"></field>
+      <field name="serviceLevel1" type="invalid-BIGINT:19:0"></field>
+      <field name="ohrana" type="invalid-BIGINT:19:0"></field>
+      <field name="address" type="very-long"></field>
+      <field name="key" type="invalid-BIGINT:19:0"></field>
+      <field name="locationText" type="very-long"></field>
+      <field name="serviceLevel2" type="invalid-BIGINT:19:0"></field>
+      <field name="abreviation" type="very-long"></field>
+      <field name="address2" type="very-long"></field>
+      <field name="instPower" type="invalid-DOUBLE:22:0"></field>
+      <field name="security" type="invalid-BIGINT:19:0"></field>
+      <field name="locationN" type="invalid-DOUBLE:22:0"></field>
+      <field name="dispachingCenter" type="invalid-BIGINT:19:0"></field>
+      <prim-key field="key"/>
+    </entity>
+    <entity entity-name="SbucheForecastError"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slice" type="date-time"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+      <field name="pctRelError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="SbuchePvForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="forecast" type="invalid-DOUBLE:22:0"></field>
+      <field name="hourSlice" type="date-time"></field>
+      <prim-key field="hourSlice"/>
+    </entity>
+    <entity entity-name="ServiceCenters"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="name" type="very-long"></field>
+      <field name="mob2" type="very-long"></field>
+      <field name="address" type="very-long"></field>
+      <field name="mob1" type="very-long"></field>
+      <field name="tel1" type="very-long"></field>
+      <field name="key" type="invalid-BIGINT:19:0"></field>
+      <field name="tel2" type="very-long"></field>
+      <field name="address2" type="very-long"></field>
+      <field name="location" type="very-long"></field>
+      <field name="manager" type="invalid-BIGINT UNSIGNED:20:0"></field>
+      <field name="serviceLevel" type="invalid-TINYINT UNSIGNED:3:0"></field>
+      <field name="dispachingCenter" type="invalid-BIGINT UNSIGNED:20:0"></field>
+      <field name="type" type="very-long"></field>
+      <prim-key field="key"/>
+    </entity>
+    <entity entity-name="SlivenAll"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bktp1" type="floating-point"></field>
+      <field name="bktp2" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="SlivenBktp1Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slivenBktp1MvNdx" type="numeric"></field>
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="slivenBktp1MvNdx"/>
+    </entity>
+    <entity entity-name="SlivenBktp2Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slivenBktp2MvNdx" type="numeric"></field>
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="slivenBktp2MvNdx"/>
+    </entity>
+    <entity entity-name="SlivenDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="SlivenDailyYieldBackup"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="SlivenEdc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="slivenEdcNdx" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="slivenEdcNdx"/>
+    </entity>
+    <entity entity-name="SlivenEvn"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="unbalGes" type="invalid-DOUBLE:22:0"></field>
+      <field name="generation" type="invalid-DECIMAL:37:4"></field>
+      <field name="dateSlice" type="date-time"></field>
+      <field name="unbalEvn" type="invalid-DECIMAL:43:9"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="SlivenForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slivenForecastNdx" type="numeric"></field>
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="slivenForecastNdx"/>
+    </entity>
+    <entity entity-name="SlivenForecastError"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slice" type="date-time"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+      <field name="pctRelError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="SlivenHourslices1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="SlivenHourslices2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="SlivenPvForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="forecast" type="invalid-DOUBLE:22:0"></field>
+      <field name="hourSlice" type="date-time"></field>
+      <prim-key field="hourSlice"/>
+    </entity>
+    <entity entity-name="SlivenThs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="SmaEvents"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="name" type="long-varchar"></field>
+      <field name="description" type="very-long"></field>
+      <field name="measures" type="very-long"></field>
+      <field name="event" type="short-varchar"></field>
+      <field name="id" type="numeric"></field>
+      <field name="notes" type="very-long"></field>
+      <field name="code" type="short-varchar"></field>
+      <prim-key field="id"/>
+    </entity>
+    <entity entity-name="SqlthDrv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="name" type="long-varchar"></field>
+      <field name="id" type="numeric"></field>
+      <prim-key field="id"/>
+    </entity>
+    <entity entity-name="SqlthPartitions"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="blocksize" type="numeric"></field>
+      <field name="drvid" type="numeric"></field>
+      <field name="pname" type="long-varchar"></field>
+      <field name="endTime" type="invalid-BIGINT:19:0"></field>
+      <field name="startTime" type="invalid-BIGINT:19:0"></field>
+      <field name="flags" type="numeric"></field>
+    </entity>
+    <entity entity-name="SqlthSce"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="rate" type="numeric"></field>
+      <field name="scid" type="numeric"></field>
+      <field name="endTime" type="invalid-BIGINT:19:0"></field>
+      <field name="startTime" type="invalid-BIGINT:19:0"></field>
+    </entity>
+    <entity entity-name="SqlthScinfo"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="drvid" type="numeric"></field>
+      <field name="id" type="numeric"></field>
+      <field name="scname" type="long-varchar"></field>
+      <prim-key field="id"/>
+    </entity>
+    <entity entity-name="SqlthTe"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="retired" type="invalid-BIGINT:19:0"></field>
+      <field name="datatype" type="numeric"></field>
+      <field name="scid" type="numeric"></field>
+      <field name="id" type="numeric"></field>
+      <field name="created" type="invalid-BIGINT:19:0"></field>
+      <field name="querymode" type="numeric"></field>
+      <field name="tagpath" type="long-varchar"></field>
+      <prim-key field="id"/>
+    </entity>
+    <entity entity-name="SqltAs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="timedbunits" type="numeric"></field>
+      <field name="severity" type="numeric"></field>
+      <field name="statename" type="long-varchar"></field>
+      <field name="id" type="numeric"></field>
+      <field name="lotagpath" type="long-varchar"></field>
+      <field name="high" type="invalid-DOUBLE:22:0"></field>
+      <field name="timedeadband" type="invalid-DOUBLE:22:0"></field>
+      <field name="low" type="invalid-DOUBLE:22:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="flags" type="numeric"></field>
+      <field name="hitagpath" type="long-varchar"></field>
+      <prim-key field="id"/>
+    </entity>
+    <entity entity-name="SqltCore"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="name" type="long-varchar"></field>
+      <field name="scanclass" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="valuechange" type="date-time"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="path" type="long-varchar"></field>
+      <field name="enabled" type="numeric"></field>
+      <field name="datatype" type="numeric"></field>
+      <field name="drivername" type="long-varchar"></field>
+      <field name="id" type="numeric"></field>
+      <field name="tagtype" type="numeric"></field>
+      <field name="accessrights" type="numeric"></field>
+      <field name="configchange" type="date-time"></field>
+      <field name="deleted" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="id"/>
+    </entity>
+    <entity entity-name="SqltData1201204" table-name="SQLT_DATA_1_2012_04"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="SqltData120120460" table-name="SQLT_DATA_1_2012_04_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201205" table-name="SQLT_DATA_1_2012_05"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="SqltData120120560" table-name="SQLT_DATA_1_2012_05_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201206" table-name="SQLT_DATA_1_2012_06"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120120660" table-name="SQLT_DATA_1_2012_06_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201207" table-name="SQLT_DATA_1_2012_07"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120120760" table-name="SQLT_DATA_1_2012_07_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201208" table-name="SQLT_DATA_1_2012_08"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120120860" table-name="SQLT_DATA_1_2012_08_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201209" table-name="SQLT_DATA_1_2012_09"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120120960" table-name="SQLT_DATA_1_2012_09_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201210" table-name="SQLT_DATA_1_2012_10"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120121060" table-name="SQLT_DATA_1_2012_10_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201211" table-name="SQLT_DATA_1_2012_11"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120121160" table-name="SQLT_DATA_1_2012_11_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201212" table-name="SQLT_DATA_1_2012_12"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120121260" table-name="SQLT_DATA_1_2012_12_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201301" table-name="SQLT_DATA_1_2013_01"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130160" table-name="SQLT_DATA_1_2013_01_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201302" table-name="SQLT_DATA_1_2013_02"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130260" table-name="SQLT_DATA_1_2013_02_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201303" table-name="SQLT_DATA_1_2013_03"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130360" table-name="SQLT_DATA_1_2013_03_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201304" table-name="SQLT_DATA_1_2013_04"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130460" table-name="SQLT_DATA_1_2013_04_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201305" table-name="SQLT_DATA_1_2013_05"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130560" table-name="SQLT_DATA_1_2013_05_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201306" table-name="SQLT_DATA_1_2013_06"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130660" table-name="SQLT_DATA_1_2013_06_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201307" table-name="SQLT_DATA_1_2013_07"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130760" table-name="SQLT_DATA_1_2013_07_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201308" table-name="SQLT_DATA_1_2013_08"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130860" table-name="SQLT_DATA_1_2013_08_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201309" table-name="SQLT_DATA_1_2013_09"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120130960" table-name="SQLT_DATA_1_2013_09_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201310" table-name="SQLT_DATA_1_2013_10"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120131060" table-name="SQLT_DATA_1_2013_10_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201311" table-name="SQLT_DATA_1_2013_11"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120131160" table-name="SQLT_DATA_1_2013_11_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201312" table-name="SQLT_DATA_1_2013_12"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120131260" table-name="SQLT_DATA_1_2013_12_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201401" table-name="SQLT_DATA_1_2014_01"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140160" table-name="SQLT_DATA_1_2014_01_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201402" table-name="SQLT_DATA_1_2014_02"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140260" table-name="SQLT_DATA_1_2014_02_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201403" table-name="SQLT_DATA_1_2014_03"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140360" table-name="SQLT_DATA_1_2014_03_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201404" table-name="SQLT_DATA_1_2014_04"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140460" table-name="SQLT_DATA_1_2014_04_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201405" table-name="SQLT_DATA_1_2014_05"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140560" table-name="SQLT_DATA_1_2014_05_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201406" table-name="SQLT_DATA_1_2014_06"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140660" table-name="SQLT_DATA_1_2014_06_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201407" table-name="SQLT_DATA_1_2014_07"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140760" table-name="SQLT_DATA_1_2014_07_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201408" table-name="SQLT_DATA_1_2014_08"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140860" table-name="SQLT_DATA_1_2014_08_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201409" table-name="SQLT_DATA_1_2014_09"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120140960" table-name="SQLT_DATA_1_2014_09_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201410" table-name="SQLT_DATA_1_2014_10"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120141060" table-name="SQLT_DATA_1_2014_10_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201411" table-name="SQLT_DATA_1_2014_11"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120141160" table-name="SQLT_DATA_1_2014_11_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData1201412" table-name="SQLT_DATA_1_2014_12"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltData120141260" table-name="SQLT_DATA_1_2014_12_60"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="vtype" type="numeric"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="dataintegrity" type="numeric"></field>
+      <field name="tStamp" type="invalid-BIGINT:19:0"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="vtype"/>
+      <prim-key field="tStamp"/>
+      <prim-key field="tagid"/>
+    </entity>
+    <entity entity-name="SqltDrv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="port" type="numeric"></field>
+      <field name="name" type="long-varchar"></field>
+      <field name="ipaddr" type="long-varchar"></field>
+      <prim-key field="name"/>
+    </entity>
+    <entity entity-name="SqltErr"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="lifecycleid" type="numeric"></field>
+      <field name="stack" type="long-varchar"></field>
+      <field name="errormsg" type="long-varchar"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="msgtype" type="numeric"></field>
+      <field name="objecttype" type="numeric"></field>
+      <field name="objectid" type="numeric"></field>
+    </entity>
+    <entity entity-name="SqltMeta"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="floatval" type="invalid-DOUBLE:22:0"></field>
+      <field name="name" type="long-varchar"></field>
+      <field name="stringval" type="long-varchar"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="intval" type="invalid-BIGINT:19:0"></field>
+    </entity>
+    <entity entity-name="SqltPerm"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="rolename" type="long-varchar"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="accessrights" type="numeric"></field>
+    </entity>
+    <entity entity-name="SqltSc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="leaseexpire" type="date-time"></field>
+      <field name="staletimeout" type="numeric"></field>
+      <field name="name" type="long-varchar"></field>
+      <field name="hirate" type="numeric"></field>
+      <field name="comparevalue" type="invalid-DOUBLE:22:0"></field>
+      <field name="lorate" type="numeric"></field>
+      <field name="drivingtagpath" type="long-varchar"></field>
+      <field name="id" type="numeric"></field>
+      <field name="mode" type="numeric"></field>
+      <field name="comparison" type="numeric"></field>
+      <field name="deleted" type="numeric"></field>
+      <field name="configchange" type="date-time"></field>
+      <prim-key field="id"/>
+    </entity>
+    <entity entity-name="SqltSci"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="nextexec" type="date-time"></field>
+      <field name="lastexec" type="date-time"></field>
+      <field name="lastexecdelay" type="numeric"></field>
+      <field name="execcount" type="numeric"></field>
+      <field name="scId" type="numeric"></field>
+      <field name="lastexecrate" type="numeric"></field>
+      <field name="lastexecopcwrites" type="numeric"></field>
+      <field name="lastexecdbwrites" type="numeric"></field>
+      <field name="drivername" type="long-varchar"></field>
+      <field name="avgexecduration" type="numeric"></field>
+      <field name="lastexecdbreads" type="numeric"></field>
+      <field name="lastexecopcreads" type="numeric"></field>
+      <field name="lastexecduration" type="numeric"></field>
+    </entity>
+    <entity entity-name="SqltWq"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="datevalue" type="date-time"></field>
+      <field name="stringvalue" type="long-varchar"></field>
+      <field name="responsecode" type="numeric"></field>
+      <field name="responsemsg" type="long-varchar"></field>
+      <field name="intvalue" type="invalid-BIGINT:19:0"></field>
+      <field name="id" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="tagid" type="numeric"></field>
+      <field name="floatvalue" type="invalid-DOUBLE:22:0"></field>
+      <prim-key field="id"/>
+    </entity>
+    <entity entity-name="SredetsAll"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bktp1" type="floating-point"></field>
+      <field name="bktp2" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="SredetsBktp1Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="sredetsBktp1LvNdx" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="sredetsBktp1LvNdx"/>
+    </entity>
+    <entity entity-name="SredetsBktp1Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="sredetsBktp1MvNdx" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="sredetsBktp1MvNdx"/>
+    </entity>
+    <entity entity-name="SredetsBktp2Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="sredetsBktp2LvNdx" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="sredetsBktp2LvNdx"/>
+    </entity>
+    <entity entity-name="SredetsBktp2Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="sredetsBktp2MvNdx" type="numeric"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="sredetsBktp2MvNdx"/>
+    </entity>
+    <entity entity-name="SredetsDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="maxpower" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="SredetsDailyYieldBackup"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="maxpower" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="SredetsEdc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="sredetsEdcNdx" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="sredetsEdcNdx"/>
+    </entity>
+    <entity entity-name="SredetsEvn"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="unbalGes" type="invalid-DOUBLE:22:0"></field>
+      <field name="generation" type="invalid-DECIMAL:37:4"></field>
+      <field name="dateSlice" type="date-time"></field>
+      <field name="unbalEvn" type="invalid-DECIMAL:43:9"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="SredetsForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="sredetsForecastNdx" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="sredetsForecastNdx"/>
+    </entity>
+    <entity entity-name="SredetsForecastError"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slice" type="date-time"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+      <field name="pctRelError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="SredetsHourslices1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="SredetsHourslices2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="SredetsPvForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="forecast" type="invalid-DOUBLE:22:0"></field>
+      <field name="hourSlice" type="date-time"></field>
+      <prim-key field="hourSlice"/>
+    </entity>
+    <entity entity-name="SredetsThs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="SredetsZruTotal"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="sredetsZruTotalNdx" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="sredetsZruTotalNdx"/>
+    </entity>
+    <entity entity-name="StudenobucheAll"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bktp1" type="floating-point"></field>
+      <field name="bktp2" type="floating-point"></field>
+      <field name="bktp3" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="StudenobucheBktp1Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="studenobucheBktp1MvNdx" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="studenobucheBktp1MvNdx"/>
+    </entity>
+    <entity entity-name="StudenobucheBktp2Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="studenobucheBktp2MvNdx" type="numeric"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="studenobucheBktp2MvNdx"/>
+    </entity>
+    <entity entity-name="StudenobucheBktp3Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="studenobucheBktp3MvNdx" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="studenobucheBktp3MvNdx"/>
+    </entity>
+    <entity entity-name="StudenobucheDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="StudenobucheDailyYieldBackup"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="StudenobucheEdc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="studenobucheEdcNdx" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="studenobucheEdcNdx"/>
+    </entity>
+    <entity entity-name="StudenobucheEvn"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="unbalGes" type="invalid-DOUBLE:22:0"></field>
+      <field name="generation" type="invalid-DECIMAL:38:4"></field>
+      <field name="dateSlice" type="date-time"></field>
+      <field name="unbalEvn" type="invalid-DECIMAL:44:9"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="StudenobucheForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="studenobucheForecastNdx" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="studenobucheForecastNdx"/>
+    </entity>
+    <entity entity-name="StudenobucheHourslices1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="StudenobucheHourslices2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="StudenobucheHourslices3"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="StudenobucheThs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="Test"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="TizbaAll"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bktp1" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="TizbaBktp1Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i-3avg" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="tizbaBktp1LvNdx" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="tizbaBktp1LvNdx"/>
+    </entity>
+    <entity entity-name="TizbaDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="maxpower" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+      <prim-key field="date"/>
+    </entity>
+    <entity entity-name="ValchedramDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+      <prim-key field="date"/>
+    </entity>
+    <entity entity-name="ValchedramDailyYieldBackup"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="ValchedramEdc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <field name="valchedramEdcNdx" type="numeric"></field>
+      <prim-key field="valchedramEdcNdx"/>
+    </entity>
+    <entity entity-name="ValchedramForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="valchedramForecastNdx" type="numeric"></field>
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="valchedramForecastNdx"/>
+    </entity>
+    <entity entity-name="VdrumAll"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bktp1" type="floating-point"></field>
+      <field name="bktp2" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="VdrumEvn"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="unbalGes" type="invalid-DOUBLE:22:0"></field>
+      <field name="generation" type="invalid-DECIMAL:37:4"></field>
+      <field name="dateSlice" type="date-time"></field>
+      <field name="unbalEvn" type="invalid-DECIMAL:43:9"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="VdrumForecastError"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slice" type="date-time"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+      <field name="pctRelError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="VdrumHourslices1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="VdrumHourslices2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="VdrumNorth"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="vdrumNorthNdx" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="vdrumNorthNdx"/>
+    </entity>
+    <entity entity-name="VdrumPvForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="forecast" type="invalid-DOUBLE:22:0"></field>
+      <field name="hourSlice" type="date-time"></field>
+      <prim-key field="hourSlice"/>
+    </entity>
+    <entity entity-name="VdrumSouth"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="vdrumSouthNdx" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="vdrumSouthNdx"/>
+    </entity>
+    <entity entity-name="VdrumThs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="VihrenAnalyzer"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="invalid-FLOAT:12:0"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="vihrenAnalyzerNdx" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="vihrenAnalyzerNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoAll"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="bktp1" type="floating-point"></field>
+      <field name="bktp2" type="floating-point"></field>
+      <field name="bktp3" type="floating-point"></field>
+      <field name="bktp4" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+      <field name="bktp5" type="floating-point"></field>
+    </entity>
+    <entity entity-name="YerusalimovoBktp1Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="yerusalimovoBktp1LvNdx" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp1LvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp1Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="yerusalimovoBktp1MvNdx" type="numeric"></field>
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp1MvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp2Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="yerusalimovoBktp2LvNdx" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp2LvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp2Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="yerusalimovoBktp2MvNdx" type="numeric"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp2MvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp3Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="yerusalimovoBktp3LvNdx" type="numeric"></field>
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp3LvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp3Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="yerusalimovoBktp3MvNdx" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp3MvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp4Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="yerusalimovoBktp4LvNdx" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp4LvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp4Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="yerusalimovoBktp4MvNdx" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp4MvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp5Lv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="yerusalimovoBktp5LvNdx" type="numeric"></field>
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp5LvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoBktp5Mv"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="i3avg" col-name="I_3AVG" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvarImport" type="numeric"></field>
+      <field name="totalKwImport" type="numeric"></field>
+      <field name="totalKw" type="numeric"></field>
+      <field name="vllAvg" type="numeric"></field>
+      <field name="kvarhExport" type="numeric"></field>
+      <field name="totalKvar" type="numeric"></field>
+      <field name="vlnAvg" type="numeric"></field>
+      <field name="totalKvarExport" type="numeric"></field>
+      <field name="qualityCode" type="numeric"></field>
+      <field name="totalPfLag" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPf" type="invalid-FLOAT:12:0"></field>
+      <field name="totalPfLead" type="invalid-FLOAT:12:0"></field>
+      <field name="totalKvah" type="numeric"></field>
+      <field name="kwhImport" type="numeric"></field>
+      <field name="tStamp" type="date-time"></field>
+      <field name="kwhExport" type="numeric"></field>
+      <field name="kvarhImport" type="numeric"></field>
+      <field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+      <field name="yerusalimovoBktp5MvNdx" type="numeric"></field>
+      <field name="totalKva" type="numeric"></field>
+      <prim-key field="yerusalimovoBktp5MvNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoDailyYield"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="YerusalimovoDailyYieldBackup"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="activeenergyconsumed" type="numeric"></field>
+      <field name="reactiveenergyproduced" type="numeric"></field>
+      <field name="reactiveenergyconsumed" type="numeric"></field>
+      <field name="date" type="date"></field>
+      <field name="activeenergyproduced" type="numeric"></field>
+    </entity>
+    <entity entity-name="YerusalimovoEdc"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="yerusalimovoEdcNdx" type="numeric"></field>
+      <field name="energy" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="yerusalimovoEdcNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoEvn"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="unbalGes" type="invalid-DOUBLE:22:0"></field>
+      <field name="generation" type="invalid-DECIMAL:40:4"></field>
+      <field name="dateSlice" type="date-time"></field>
+      <field name="unbalEvn" type="invalid-DECIMAL:46:9"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="YerusalimovoForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="energy" type="numeric"></field>
+      <field name="yerusalimovoForecastNdx" type="numeric"></field>
+      <field name="month" type="long-varchar"></field>
+      <prim-key field="yerusalimovoForecastNdx"/>
+    </entity>
+    <entity entity-name="YerusalimovoForecastError"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="slice" type="date-time"></field>
+      <field name="absError" type="invalid-DOUBLE:22:0"></field>
+      <field name="pctRelError" type="invalid-DOUBLE:22:0"></field>
+    </entity>
+    <entity entity-name="YerusalimovoHourslices1"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="YerusalimovoHourslices2"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="YerusalimovoHourslices3"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="YerusalimovoHourslices4"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="YerusalimovoHourslices5"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
+    <entity entity-name="YerusalimovoPvForecast"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="forecast" type="invalid-DOUBLE:22:0"></field>
+      <field name="hourSlice" type="date-time"></field>
+      <prim-key field="hourSlice"/>
+    </entity>
+    <entity entity-name="YerusalimovoThs"
+            package-name=""
+            title="None"
+            copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="generation" type="floating-point"></field>
+      <field name="slice" type="date-time"></field>
+    </entity>
 </entitymodel>
+

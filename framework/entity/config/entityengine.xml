@@ -393,7 +393,7 @@ access. For a detailed description see the core/docs/entityconfig.html file.
         <inline-jdbc
                 jdbc-driver="com.mysql.jdbc.Driver"
                 jdbc-uri="jdbc:mysql://10.1.1.8/mokresh?autoReconnect=true"
-                jdbc-username="res"
+                jdbc-username="ofbiz"
                 jdbc-password="prizma"
                 isolation-level="ReadCommitted"
                 pool-minsize="2"
