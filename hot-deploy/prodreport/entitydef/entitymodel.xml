@@ -1,65 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Licensed to the Apache Software Foundation (ASF) under one
-or more contributor license agreements.  See the NOTICE file
-distributed with this work for additional information
-regarding copyright ownership.  The ASF licenses this file
-to you under the Apache License, Version 2.0 (the
-"License"); you may not use this file except in compliance
-with the License.  You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations
-under the License.
--->
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor 
+	license agreements. See the NOTICE file distributed with this work for additional 
+	information regarding copyright ownership. The ASF licenses this file to 
+	you under the Apache License, Version 2.0 (the "License"); you may not use 
+	this file except in compliance with the License. You may obtain a copy of 
+	the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required 
+	by applicable law or agreed to in writing, software distributed under the 
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
+	OF ANY KIND, either express or implied. See the License for the specific 
+	language governing permissions and limitations under the License. -->
 
 <entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
-  <!-- ========================================================= -->
-  <!-- ======================== Defaults ======================= -->
-  <!-- ========================================================= -->
-    <title>Entity of an Apache Open For Business Project (Apache OFBiz) Component</title>
-    <description>None</description>
-    <copyright>Copyright 2001-2012 The Apache Software Foundation</copyright>
-    <author>None</author>
-    <version>1.0</version>
+	xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
+	<!-- ========================================================= -->
+	<!-- ======================== Defaults ======================= -->
+	<!-- ========================================================= -->
+	<title>Entity of an Apache Open For Business Project (Apache OFBiz) Component</title>
+	<description>None</description>
+	<copyright>Copyright 2001-2012 The Apache Software Foundation</copyright>
+	<author>None</author>
+	<version>1.0</version>
 
-  <!-- ========================================================= -->
-  <!-- ======================== Data Model ===================== -->
-  <!-- The modules in this file are as follows:                  -->
-  <!-- ========================================================= -->
+	<!-- ========================================================= -->
+	<!-- ======================== Data Model ===================== -->
+	<!-- The modules in this file are as follows: -->
+	<!-- ========================================================= -->
 
-  <!-- ========================================================= -->
-  <!-- No Package Name -->
-  <!-- ========================================================= -->
-    <entity entity-name="BreznikDailyYield"
-            package-name=""
-            title="None"
-            no-auto-stamp="true"
-            copyright="Copyright 2001-2014 The Apache Software Foundation">
-      <field name="activeenergyconsumed" type="numeric"></field>
-      <field name="reactiveenergyproduced" type="numeric"></field>
-      <field name="maxpower" type="numeric"></field>
-      <field name="reactiveenergyconsumed" type="numeric"></field>
-      <field name="date" type="date"></field>
-      <field name="activeenergyproduced" type="numeric"></field>
-    </entity>
-    <entity entity-name="BreznikDailyYieldBackup"
-            package-name=""
-            title="None"
-            no-auto-stamp="true"
-            copyright="Copyright 2001-2014 The Apache Software Foundation">
-      <field name="activeenergyconsumed" type="numeric"></field>
-      <field name="reactiveenergyproduced" type="numeric"></field>
-      <field name="maxpower" type="numeric"></field>
-      <field name="reactiveenergyconsumed" type="numeric"></field>
-      <field name="date" type="date"></field>
-      <field name="activeenergyproduced" type="numeric"></field>
-    </entity>
+	<!-- ========================================================= -->
+	<!-- No Package Name -->
+	<!-- ========================================================= -->
+	<entity entity-name="BreznikDailyYield" package-name="" title="None"
+		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation">
+		<field name="activeenergyconsumed" type="numeric"></field>
+		<field name="reactiveenergyproduced" type="numeric"></field>
+		<field name="maxpower" type="numeric"></field>
+		<field name="reactiveenergyconsumed" type="numeric"></field>
+		<field name="date" type="date"></field>
+		<field name="activeenergyproduced" type="numeric"></field>
+	</entity>
+	<entity entity-name="BreznikDailyYieldBackup" package-name=""
+		title="None" no-auto-stamp="true"
+		copyright="Copyright 2001-2014 The Apache Software Foundation">
+		<field name="activeenergyconsumed" type="numeric"></field>
+		<field name="reactiveenergyproduced" type="numeric"></field>
+		<field name="maxpower" type="numeric"></field>
+		<field name="reactiveenergyconsumed" type="numeric"></field>
+		<field name="date" type="date"></field>
+		<field name="activeenergyproduced" type="numeric"></field>
+	</entity>
+
+	<entity entity-name="BreznikHourslices" package-name="" title="None"
+		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation">
+		<field name="generation" type="floating-point"></field>
+		<field name="slice" type="date-time"></field>
+	</entity>
+
+	<entity entity-name="GmahalaBktp1" package-name="" title="None"
+		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation">
+		<field name="i3avg" col-name="I_3AVG" type="floating-point"></field>
+		<field name="gmahalaBktp1Ndx" type="numeric"></field>
+		<field name="totalKvarImport" type="numeric"></field>
+		<field name="totalKwImport" type="numeric"></field>
+		<field name="totalKw" type="numeric"></field>
+		<field name="vllAvg" type="numeric"></field>
+		<field name="kvarhExport" type="numeric"></field>
+		<field name="totalKvar" type="numeric"></field>
+		<field name="vlnAvg" type="numeric"></field>
+		<field name="totalKvarExport" type="numeric"></field>
+		<field name="qualityCode" type="numeric"></field>
+		<field name="totalPfLag" type="floating-point"></field>
+		<field name="totalPf" type="floating-point"></field>
+		<field name="totalPfLead" type="floating-point"></field>
+		<field name="totalKvah" type="numeric"></field>
+		<field name="kwhImport" type="numeric"></field>
+		<field name="tStamp" type="date-time"></field>
+		<field name="kwhExport" type="numeric"></field>
+		<field name="kvarhImport" type="numeric"></field>
+		<field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
+		<field name="totalKva" type="numeric"></field>
+		<prim-key field="gmahalaBktp1Ndx" />
+	</entity>
+
 </entitymodel>
 
