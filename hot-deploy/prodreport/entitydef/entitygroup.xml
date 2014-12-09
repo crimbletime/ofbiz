@@ -18,4 +18,8 @@
 	<!-- ========================================================= -->
 		<entity-group group="com.gesbg.scada" entity="BreznikDailyYield" />
 		<entity-group group="com.gesbg.scada" entity="BreznikDailyYieldBackup" />
+		<entity-group group="com.gesbg.scada" entity="GmahalaBktp1" />
+		<entity-group group="com.gesbg.scada" entity="BreznikHourslices" />
+		
+		
 </entitygroup>
