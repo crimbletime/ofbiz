@@ -29,57 +29,57 @@
 	<!-- ========================================================= -->
 	<!-- No Package Name -->
 	<!-- ========================================================= -->
-	<entity entity-name="BreznikDailyYield" package-name="" title="None"
-		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation">
-		<field name="activeenergyconsumed" type="numeric"></field>
-		<field name="reactiveenergyproduced" type="numeric"></field>
-		<field name="maxpower" type="numeric"></field>
-		<field name="reactiveenergyconsumed" type="numeric"></field>
-		<field name="date" type="date"></field>
-		<field name="activeenergyproduced" type="numeric"></field>
-	</entity>
-	<entity entity-name="BreznikDailyYieldBackup" package-name=""
-		title="None" no-auto-stamp="true"
-		copyright="Copyright 2001-2014 The Apache Software Foundation">
-		<field name="activeenergyconsumed" type="numeric"></field>
-		<field name="reactiveenergyproduced" type="numeric"></field>
-		<field name="maxpower" type="numeric"></field>
-		<field name="reactiveenergyconsumed" type="numeric"></field>
-		<field name="date" type="date"></field>
-		<field name="activeenergyproduced" type="numeric"></field>
-	</entity>
+<!-- 	<entity entity-name="BreznikDailyYield" package-name="" title="None" -->
+<!-- 		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation"> -->
+<!-- 		<field name="activeenergyconsumed" type="numeric"></field> -->
+<!-- 		<field name="reactiveenergyproduced" type="numeric"></field> -->
+<!-- 		<field name="maxpower" type="numeric"></field> -->
+<!-- 		<field name="reactiveenergyconsumed" type="numeric"></field> -->
+<!-- 		<field name="date" type="date"></field> -->
+<!-- 		<field name="activeenergyproduced" type="numeric"></field> -->
+<!-- 	</entity> -->
+<!-- 	<entity entity-name="BreznikDailyYieldBackup" package-name="" -->
+<!-- 		title="None" no-auto-stamp="true" -->
+<!-- 		copyright="Copyright 2001-2014 The Apache Software Foundation"> -->
+<!-- 		<field name="activeenergyconsumed" type="numeric"></field> -->
+<!-- 		<field name="reactiveenergyproduced" type="numeric"></field> -->
+<!-- 		<field name="maxpower" type="numeric"></field> -->
+<!-- 		<field name="reactiveenergyconsumed" type="numeric"></field> -->
+<!-- 		<field name="date" type="date"></field> -->
+<!-- 		<field name="activeenergyproduced" type="numeric"></field> -->
+<!-- 	</entity> -->
 
-	<entity entity-name="BreznikHourslices" package-name="" title="None"
-		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation">
-		<field name="generation" type="floating-point"></field>
-		<field name="slice" type="date-time"></field>
-	</entity>
+<!-- 	<entity entity-name="BreznikHourslices" package-name="" title="None" -->
+<!-- 		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation"> -->
+<!-- 		<field name="generation" type="floating-point"></field> -->
+<!-- 		<field name="slice" type="date-time"></field> -->
+<!-- 	</entity> -->
 
-	<entity entity-name="GmahalaBktp1" package-name="" title="None"
-		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation">
-		<field name="i3avg" col-name="I_3AVG" type="floating-point"></field>
-		<field name="gmahalaBktp1Ndx" type="numeric"></field>
-		<field name="totalKvarImport" type="numeric"></field>
-		<field name="totalKwImport" type="numeric"></field>
-		<field name="totalKw" type="numeric"></field>
-		<field name="vllAvg" type="numeric"></field>
-		<field name="kvarhExport" type="numeric"></field>
-		<field name="totalKvar" type="numeric"></field>
-		<field name="vlnAvg" type="numeric"></field>
-		<field name="totalKvarExport" type="numeric"></field>
-		<field name="qualityCode" type="numeric"></field>
-		<field name="totalPfLag" type="floating-point"></field>
-		<field name="totalPf" type="floating-point"></field>
-		<field name="totalPfLead" type="floating-point"></field>
-		<field name="totalKvah" type="numeric"></field>
-		<field name="kwhImport" type="numeric"></field>
-		<field name="tStamp" type="date-time"></field>
-		<field name="kwhExport" type="numeric"></field>
-		<field name="kvarhImport" type="numeric"></field>
-		<field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field>
-		<field name="totalKva" type="numeric"></field>
-		<prim-key field="gmahalaBktp1Ndx" />
-	</entity>
+<!-- 	<entity entity-name="GmahalaBktp1" package-name="" title="None" -->
+<!-- 		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation"> -->
+<!-- 		<field name="i3avg" col-name="I_3AVG" type="floating-point"></field> -->
+<!-- 		<field name="gmahalaBktp1Ndx" type="numeric"></field> -->
+<!-- 		<field name="totalKvarImport" type="numeric"></field> -->
+<!-- 		<field name="totalKwImport" type="numeric"></field> -->
+<!-- 		<field name="totalKw" type="numeric"></field> -->
+<!-- 		<field name="vllAvg" type="numeric"></field> -->
+<!-- 		<field name="kvarhExport" type="numeric"></field> -->
+<!-- 		<field name="totalKvar" type="numeric"></field> -->
+<!-- 		<field name="vlnAvg" type="numeric"></field> -->
+<!-- 		<field name="totalKvarExport" type="numeric"></field> -->
+<!-- 		<field name="qualityCode" type="numeric"></field> -->
+<!-- 		<field name="totalPfLag" type="floating-point"></field> -->
+<!-- 		<field name="totalPf" type="floating-point"></field> -->
+<!-- 		<field name="totalPfLead" type="floating-point"></field> -->
+<!-- 		<field name="totalKvah" type="numeric"></field> -->
+<!-- 		<field name="kwhImport" type="numeric"></field> -->
+<!-- 		<field name="tStamp" type="date-time"></field> -->
+<!-- 		<field name="kwhExport" type="numeric"></field> -->
+<!-- 		<field name="kvarhImport" type="numeric"></field> -->
+<!-- 		<field name="totalKwExport" col-name="TOTAL_KW__EXPORT" type="numeric"></field> -->
+<!-- 		<field name="totalKva" type="numeric"></field> -->
+<!-- 		<prim-key field="gmahalaBktp1Ndx" /> -->
+<!-- 	</entity> -->
 
 </entitymodel>
 
