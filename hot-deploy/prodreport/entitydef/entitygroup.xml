@@ -17,6 +17,7 @@
 	<!-- com.gesbg.scada -->
 	<!-- ========================================================= -->
 		<entity-group group="com.gesbg.scada" entity="GmahalaBktp2Dy" />
+		<entity-group group="com.gesbg.scada" entity="GmahalaBktp1Dy" />
 		
 		
 </entitygroup>
