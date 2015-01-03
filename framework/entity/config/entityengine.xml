@@ -341,7 +341,7 @@
 		<read-data reader-name="ext-demo" />
 		<inline-jdbc jdbc-driver="com.mysql.jdbc.Driver"
 			jdbc-uri="jdbc:mysql://127.0.0.1/ofbizolap?autoReconnect=true"
-			jdbc-username="ofbiz" jdbc-password="ofbiz" isolation-level="ReadCommitted"
+			jdbc-username="root" jdbc-password="prizma" isolation-level="ReadCommitted"
 			pool-minsize="2" pool-maxsize="250"
 			time-between-eviction-runs-millis="600000" /><!-- Please note that at 
 			least one person has experienced a problem with this value with MySQL and 
@@ -365,7 +365,7 @@
 		<read-data reader-name="ext-demo" />
 		<inline-jdbc jdbc-driver="com.mysql.jdbc.Driver"
 			jdbc-uri="jdbc:mysql://127.0.0.1/ofbiztenant?autoReconnect=true"
-			jdbc-username="ofbiz" jdbc-password="ofbiz" isolation-level="ReadCommitted"
+			jdbc-username="root" jdbc-password="prizma" isolation-level="ReadCommitted"
 			pool-minsize="2" pool-maxsize="250"
 			time-between-eviction-runs-millis="600000" /><!-- Please note that at 
 			least one person has experienced a problem with this value with MySQL and 

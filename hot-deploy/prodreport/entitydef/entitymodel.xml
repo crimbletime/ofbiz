@@ -51,6 +51,26 @@
       <field name="kvarhImport" type="floating-point" col-name="kvarh_Import"></field>
       <field name="kvarhExport" type="floating-point" col-name="kvarh_Export"></field>
     </entity>
+    <entity entity-name="GmahalaBktp3Dy" table-name="GMAHALA_BKTP3__DY"
+            package-name=""
+            title="None"
+            no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="kwhImport" type="floating-point" col-name="kWh_Import"></field>
+      <field name="tStamp" type="date-time" col-name="t_stamp"></field>
+      <field name="kwhExport" type="floating-point" col-name="kWh_Export"></field>
+      <field name="kvarhImport" type="floating-point" col-name="kvarh_Import"></field>
+      <field name="kvarhExport" type="floating-point" col-name="kvarh_Export"></field>
+    </entity>
+    <entity entity-name="GmahalaBktp4Dy" table-name="GMAHALA_BKTP4__DY"
+            package-name=""
+            title="None"
+            no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation">
+      <field name="kwhImport" type="floating-point" col-name="kWh_Import"></field>
+      <field name="tStamp" type="date-time" col-name="t_stamp"></field>
+      <field name="kwhExport" type="floating-point" col-name="kWh_Export"></field>
+      <field name="kvarhImport" type="floating-point" col-name="kvarh_Import"></field>
+      <field name="kvarhExport" type="floating-point" col-name="kvarh_Export"></field>
+    </entity>
 <!-- 	<entity entity-name="BreznikDailyYield" package-name="" title="None" -->
 <!-- 		no-auto-stamp="true" copyright="Copyright 2001-2014 The Apache Software Foundation"> -->
 <!-- 		<field name="activeenergyconsumed" type="numeric"></field> -->

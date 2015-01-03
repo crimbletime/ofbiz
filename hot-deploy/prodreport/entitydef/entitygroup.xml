@@ -18,6 +18,8 @@
 	<!-- ========================================================= -->
 		<entity-group group="com.gesbg.scada" entity="GmahalaBktp2Dy" />
 		<entity-group group="com.gesbg.scada" entity="GmahalaBktp1Dy" />
+		<entity-group group="com.gesbg.scada" entity="GmahalaBktp3Dy" />
+		<entity-group group="com.gesbg.scada" entity="GmahalaBktp4Dy" />
 		
 		
 </entitygroup>
