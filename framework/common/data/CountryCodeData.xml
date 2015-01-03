@@ -524,242 +524,242 @@ under the License.
 <!--     <CountryCapital countryCapital="Pretoria" countryCode="ZA"/> -->
 <!--     <CountryCapital countryCapital="Lusaka" countryCode="ZM"/> -->
 <!--     <CountryCapital countryCapital="Harare" countryCode="ZW"/> -->
-    <CountryTeleCode countryCode="AD" teleCode="376"/>
-    <CountryTeleCode countryCode="AE" teleCode="971"/>
-    <CountryTeleCode countryCode="AF" teleCode="93"/>
-    <CountryTeleCode countryCode="AG" teleCode="1-268"/>
-    <CountryTeleCode countryCode="AI" teleCode="1-264"/>
-    <CountryTeleCode countryCode="AL" teleCode="355"/>
-    <CountryTeleCode countryCode="AM" teleCode="374"/>
-    <CountryTeleCode countryCode="AN" teleCode="599"/>
-    <CountryTeleCode countryCode="AO" teleCode="244"/>
-    <CountryTeleCode countryCode="AQ" teleCode="672"/>
-    <CountryTeleCode countryCode="AR" teleCode="54"/>
-    <CountryTeleCode countryCode="AS" teleCode="684"/>
-    <CountryTeleCode countryCode="AT" teleCode="43"/>
-    <CountryTeleCode countryCode="AU" teleCode="61"/>
-    <CountryTeleCode countryCode="AW" teleCode="297"/>
-    <CountryTeleCode countryCode="AZ" teleCode="994"/>
-    <CountryTeleCode countryCode="BA" teleCode="387"/>
-    <CountryTeleCode countryCode="BB" teleCode="1-246"/>
-    <CountryTeleCode countryCode="BD" teleCode="880"/>
-    <CountryTeleCode countryCode="BE" teleCode="32"/>
-    <CountryTeleCode countryCode="BF" teleCode="226"/>
-    <CountryTeleCode countryCode="BG" teleCode="359"/>
-    <CountryTeleCode countryCode="BH" teleCode="973"/>
-    <CountryTeleCode countryCode="BI" teleCode="257"/>
-    <CountryTeleCode countryCode="BJ" teleCode="229"/>
-    <CountryTeleCode countryCode="BM" teleCode="1-441"/>
-    <CountryTeleCode countryCode="BN" teleCode="673"/>
-    <CountryTeleCode countryCode="BO" teleCode="591"/>
-    <CountryTeleCode countryCode="BR" teleCode="55"/>
-    <CountryTeleCode countryCode="BS" teleCode="1-242"/>
-    <CountryTeleCode countryCode="BT" teleCode="975"/>
-    <CountryTeleCode countryCode="BV" teleCode=""/>
-    <CountryTeleCode countryCode="BW" teleCode="267"/>
-    <CountryTeleCode countryCode="BY" teleCode="375"/>
-    <CountryTeleCode countryCode="BZ" teleCode="501"/>
-    <CountryTeleCode countryCode="CA" teleCode="1"/>
-    <CountryTeleCode countryCode="CC" teleCode="61"/>
-    <CountryTeleCode countryCode="CD" teleCode="243"/>
-    <CountryTeleCode countryCode="CF" teleCode="236"/>
-    <CountryTeleCode countryCode="CG" teleCode="242"/>
-    <CountryTeleCode countryCode="CH" teleCode="41"/>
-    <CountryTeleCode countryCode="CI" teleCode="225"/>
-    <CountryTeleCode countryCode="CK" teleCode="682"/>
-    <CountryTeleCode countryCode="CL" teleCode="56"/>
-    <CountryTeleCode countryCode="CM" teleCode="237"/>
-    <CountryTeleCode countryCode="CN" teleCode="86"/>
-    <CountryTeleCode countryCode="CO" teleCode="57"/>
-    <CountryTeleCode countryCode="CR" teleCode="506"/>
-    <CountryTeleCode countryCode="CU" teleCode="53"/>
-    <CountryTeleCode countryCode="CV" teleCode="238"/>
-    <CountryTeleCode countryCode="CX" teleCode="61"/>
-    <CountryTeleCode countryCode="CY" teleCode="357"/>
-    <CountryTeleCode countryCode="CZ" teleCode="420"/>
-    <CountryTeleCode countryCode="DE" teleCode="49"/>
-    <CountryTeleCode countryCode="DJ" teleCode="253"/>
-    <CountryTeleCode countryCode="DK" teleCode="45"/>
-    <CountryTeleCode countryCode="DM" teleCode="1-767"/>
-    <CountryTeleCode countryCode="DO" teleCode="809"/>
-    <CountryTeleCode countryCode="DZ" teleCode="213"/>
-    <CountryTeleCode countryCode="EC" teleCode="593"/>
-    <CountryTeleCode countryCode="EE" teleCode="372"/>
-    <CountryTeleCode countryCode="EG" teleCode="20"/>
-    <CountryTeleCode countryCode="EH" teleCode=""/>
-    <CountryTeleCode countryCode="ER" teleCode="291"/>
-    <CountryTeleCode countryCode="ES" teleCode="34"/>
-    <CountryTeleCode countryCode="ET" teleCode="251"/>
-    <CountryTeleCode countryCode="FI" teleCode="358"/>
-    <CountryTeleCode countryCode="FJ" teleCode="679"/>
-    <CountryTeleCode countryCode="FK" teleCode="500"/>
-    <CountryTeleCode countryCode="FM" teleCode="691"/>
-    <CountryTeleCode countryCode="FO" teleCode="298"/>
-    <CountryTeleCode countryCode="FR" teleCode="33"/>
-    <CountryTeleCode countryCode="GA" teleCode="241"/>
-    <CountryTeleCode countryCode="GB" teleCode="44"/>
-    <CountryTeleCode countryCode="GD" teleCode="1-473"/>
-    <CountryTeleCode countryCode="GE" teleCode="995"/>
-    <CountryTeleCode countryCode="GF" teleCode="594"/>
-    <CountryTeleCode countryCode="GH" teleCode="233"/>
-    <CountryTeleCode countryCode="GI" teleCode="350"/>
-    <CountryTeleCode countryCode="GL" teleCode="299"/>
-    <CountryTeleCode countryCode="GM" teleCode="220"/>
-    <CountryTeleCode countryCode="GN" teleCode="224"/>
-    <CountryTeleCode countryCode="GP" teleCode="590"/>
-    <CountryTeleCode countryCode="GQ" teleCode="240"/>
-    <CountryTeleCode countryCode="GR" teleCode="30"/>
-    <CountryTeleCode countryCode="GS" teleCode=""/>
-    <CountryTeleCode countryCode="GT" teleCode="502"/>
-    <CountryTeleCode countryCode="GU" teleCode="1-671"/>
-    <CountryTeleCode countryCode="GW" teleCode="245"/>
-    <CountryTeleCode countryCode="GY" teleCode="592"/>
-    <CountryTeleCode countryCode="HK" teleCode="852"/>
-    <CountryTeleCode countryCode="HM" teleCode=""/>
-    <CountryTeleCode countryCode="HN" teleCode="504"/>
-    <CountryTeleCode countryCode="HR" teleCode="385"/>
-    <CountryTeleCode countryCode="HT" teleCode="509"/>
-    <CountryTeleCode countryCode="HU" teleCode="36"/>
-    <CountryTeleCode countryCode="ID" teleCode="62"/>
-    <CountryTeleCode countryCode="IE" teleCode="353"/>
-    <CountryTeleCode countryCode="IL" teleCode="972"/>
-    <CountryTeleCode countryCode="IN" teleCode="91"/>
-    <CountryTeleCode countryCode="IO" teleCode=""/>
-    <CountryTeleCode countryCode="IQ" teleCode="964"/>
-    <CountryTeleCode countryCode="IR" teleCode="98"/>
-    <CountryTeleCode countryCode="IS" teleCode="354"/>
-    <CountryTeleCode countryCode="IT" teleCode="39"/>
-    <CountryTeleCode countryCode="JM" teleCode="1-876"/>
-    <CountryTeleCode countryCode="JO" teleCode="962"/>
-    <CountryTeleCode countryCode="JP" teleCode="81"/>
-    <CountryTeleCode countryCode="KE" teleCode="254"/>
-    <CountryTeleCode countryCode="KG" teleCode="996"/>
-    <CountryTeleCode countryCode="KH" teleCode="855"/>
-    <CountryTeleCode countryCode="KI" teleCode="686"/>
-    <CountryTeleCode countryCode="KM" teleCode="269"/>
-    <CountryTeleCode countryCode="KN" teleCode="1-869"/>
-    <CountryTeleCode countryCode="KP" teleCode="850"/>
-    <CountryTeleCode countryCode="KR" teleCode="82"/>
-    <CountryTeleCode countryCode="KW" teleCode="965"/>
-    <CountryTeleCode countryCode="KY" teleCode="1-345"/>
-    <CountryTeleCode countryCode="KZ" teleCode="7"/>
-    <CountryTeleCode countryCode="LA" teleCode="856"/>
-    <CountryTeleCode countryCode="LB" teleCode="961"/>
-    <CountryTeleCode countryCode="LC" teleCode="1-758"/>
-    <CountryTeleCode countryCode="LI" teleCode="423"/>
-    <CountryTeleCode countryCode="LK" teleCode="94"/>
-    <CountryTeleCode countryCode="LR" teleCode="231"/>
-    <CountryTeleCode countryCode="LS" teleCode="266"/>
-    <CountryTeleCode countryCode="LT" teleCode="370"/>
-    <CountryTeleCode countryCode="LU" teleCode="352"/>
-    <CountryTeleCode countryCode="LV" teleCode="371"/>
-    <CountryTeleCode countryCode="LY" teleCode="218"/>
-    <CountryTeleCode countryCode="MA" teleCode="212"/>
-    <CountryTeleCode countryCode="MC" teleCode="377"/>
-    <CountryTeleCode countryCode="MD" teleCode="373"/>
-    <CountryTeleCode countryCode="MG" teleCode="261"/>
-    <CountryTeleCode countryCode="MH" teleCode="692"/>
-    <CountryTeleCode countryCode="MK" teleCode="389"/>
-    <CountryTeleCode countryCode="ML" teleCode="223"/>
-    <CountryTeleCode countryCode="MM" teleCode="95"/>
-    <CountryTeleCode countryCode="MN" teleCode="976"/>
-    <CountryTeleCode countryCode="MO" teleCode="853"/>
-    <CountryTeleCode countryCode="MP" teleCode="670"/>
-    <CountryTeleCode countryCode="MQ" teleCode="596"/>
-    <CountryTeleCode countryCode="MR" teleCode="222"/>
-    <CountryTeleCode countryCode="MS" teleCode="1-664"/>
-    <CountryTeleCode countryCode="MT" teleCode="356"/>
-    <CountryTeleCode countryCode="MU" teleCode="230"/>
-    <CountryTeleCode countryCode="MV" teleCode="960"/>
-    <CountryTeleCode countryCode="MW" teleCode="265"/>
-    <CountryTeleCode countryCode="MX" teleCode="52"/>
-    <CountryTeleCode countryCode="MY" teleCode="60"/>
-    <CountryTeleCode countryCode="MZ" teleCode="258"/>
-    <CountryTeleCode countryCode="NA" teleCode="264"/>
-    <CountryTeleCode countryCode="NC" teleCode="687"/>
-    <CountryTeleCode countryCode="NE" teleCode="227"/>
-    <CountryTeleCode countryCode="NF" teleCode="672"/>
-    <CountryTeleCode countryCode="NG" teleCode="234"/>
-    <CountryTeleCode countryCode="NI" teleCode="505"/>
-    <CountryTeleCode countryCode="NL" teleCode="31"/>
-    <CountryTeleCode countryCode="NO" teleCode="47"/>
-    <CountryTeleCode countryCode="NP" teleCode="977"/>
-    <CountryTeleCode countryCode="NR" teleCode="674"/>
-    <CountryTeleCode countryCode="NU" teleCode="683"/>
-    <CountryTeleCode countryCode="NZ" teleCode="64"/>
-    <CountryTeleCode countryCode="OM" teleCode="968"/>
-    <CountryTeleCode countryCode="PA" teleCode="507"/>
-    <CountryTeleCode countryCode="PE" teleCode="51"/>
-    <CountryTeleCode countryCode="PF" teleCode="689"/>
-    <CountryTeleCode countryCode="PG" teleCode="675"/>
-    <CountryTeleCode countryCode="PH" teleCode="63"/>
-    <CountryTeleCode countryCode="PK" teleCode="92"/>
-    <CountryTeleCode countryCode="PL" teleCode="48"/>
-    <CountryTeleCode countryCode="PM" teleCode="508"/>
-    <CountryTeleCode countryCode="PN" teleCode=""/>
-    <CountryTeleCode countryCode="PR" teleCode="1-787"/>
-    <CountryTeleCode countryCode="PT" teleCode="351"/>
-    <CountryTeleCode countryCode="PW" teleCode="680"/>
-    <CountryTeleCode countryCode="PY" teleCode="595"/>
-    <CountryTeleCode countryCode="QA" teleCode="974"/>
-    <CountryTeleCode countryCode="RE" teleCode="262"/>
-    <CountryTeleCode countryCode="RO" teleCode="40"/>
-    <CountryTeleCode countryCode="RU" teleCode="7"/>
-    <CountryTeleCode countryCode="RW" teleCode="250"/>
-    <CountryTeleCode countryCode="SA" teleCode="966"/>
-    <CountryTeleCode countryCode="SB" teleCode="677"/>
-    <CountryTeleCode countryCode="SC" teleCode="248"/>
-    <CountryTeleCode countryCode="SD" teleCode="249"/>
-    <CountryTeleCode countryCode="SE" teleCode="46"/>
-    <CountryTeleCode countryCode="SG" teleCode="65"/>
-    <CountryTeleCode countryCode="SH" teleCode="290"/>
-    <CountryTeleCode countryCode="SI" teleCode="386"/>
-    <CountryTeleCode countryCode="SJ" teleCode=""/>
-    <CountryTeleCode countryCode="SK" teleCode="421"/>
-    <CountryTeleCode countryCode="SL" teleCode="232"/>
-    <CountryTeleCode countryCode="SM" teleCode="378"/>
-    <CountryTeleCode countryCode="SN" teleCode="221"/>
-    <CountryTeleCode countryCode="SO" teleCode="252"/>
-    <CountryTeleCode countryCode="SR" teleCode="597"/>
-    <CountryTeleCode countryCode="ST" teleCode="239"/>
-    <CountryTeleCode countryCode="SV" teleCode="503"/>
-    <CountryTeleCode countryCode="SY" teleCode="963"/>
-    <CountryTeleCode countryCode="SZ" teleCode="268"/>
-    <CountryTeleCode countryCode="TC" teleCode="1-649"/>
-    <CountryTeleCode countryCode="TD" teleCode="235"/>
-    <CountryTeleCode countryCode="TF" teleCode=""/>
-    <CountryTeleCode countryCode="TG" teleCode="228"/>
-    <CountryTeleCode countryCode="TH" teleCode="66"/>
-    <CountryTeleCode countryCode="TJ" teleCode="992"/>
-    <CountryTeleCode countryCode="TK" teleCode="690"/>
-    <CountryTeleCode countryCode="TM" teleCode="993"/>
-    <CountryTeleCode countryCode="TN" teleCode="216"/>
-    <CountryTeleCode countryCode="TO" teleCode="676"/>
-    <CountryTeleCode countryCode="TP" teleCode="670"/>
-    <CountryTeleCode countryCode="TR" teleCode="90"/>
-    <CountryTeleCode countryCode="TT" teleCode="1-868"/>
-    <CountryTeleCode countryCode="TV" teleCode="688"/>
-    <CountryTeleCode countryCode="TW" teleCode="886"/>
-    <CountryTeleCode countryCode="TZ" teleCode="255"/>
-    <CountryTeleCode countryCode="UA" teleCode="380"/>
-    <CountryTeleCode countryCode="UG" teleCode="256"/>
-    <CountryTeleCode countryCode="UM" teleCode=""/>
-    <CountryTeleCode countryCode="US" teleCode="1"/>
-    <CountryTeleCode countryCode="UY" teleCode="598"/>
-    <CountryTeleCode countryCode="UZ" teleCode="998"/>
-    <CountryTeleCode countryCode="VA" teleCode="39"/>
-    <CountryTeleCode countryCode="VC" teleCode="1-784"/>
-    <CountryTeleCode countryCode="VE" teleCode="58"/>
-    <CountryTeleCode countryCode="VG" teleCode="1-284"/>
-    <CountryTeleCode countryCode="VI" teleCode="1-340"/>
-    <CountryTeleCode countryCode="VN" teleCode="84"/>
-    <CountryTeleCode countryCode="VU" teleCode="678"/>
-    <CountryTeleCode countryCode="WF" teleCode="681"/>
-    <CountryTeleCode countryCode="WS" teleCode="684"/>
-    <CountryTeleCode countryCode="YE" teleCode="967"/>
-    <CountryTeleCode countryCode="YT" teleCode="269"/>
-    <CountryTeleCode countryCode="YU" teleCode="381"/>
-    <CountryTeleCode countryCode="ZA" teleCode="27"/>
-    <CountryTeleCode countryCode="ZM" teleCode="260"/>
-    <CountryTeleCode countryCode="ZW" teleCode="263"/>
+<!--     <CountryTeleCode countryCode="AD" teleCode="376"/> -->
+<!--     <CountryTeleCode countryCode="AE" teleCode="971"/> -->
+<!--     <CountryTeleCode countryCode="AF" teleCode="93"/> -->
+<!--     <CountryTeleCode countryCode="AG" teleCode="1-268"/> -->
+<!--     <CountryTeleCode countryCode="AI" teleCode="1-264"/> -->
+<!--     <CountryTeleCode countryCode="AL" teleCode="355"/> -->
+<!--     <CountryTeleCode countryCode="AM" teleCode="374"/> -->
+<!--     <CountryTeleCode countryCode="AN" teleCode="599"/> -->
+<!--     <CountryTeleCode countryCode="AO" teleCode="244"/> -->
+<!--     <CountryTeleCode countryCode="AQ" teleCode="672"/> -->
+<!--     <CountryTeleCode countryCode="AR" teleCode="54"/> -->
+<!--     <CountryTeleCode countryCode="AS" teleCode="684"/> -->
+<!--     <CountryTeleCode countryCode="AT" teleCode="43"/> -->
+<!--     <CountryTeleCode countryCode="AU" teleCode="61"/> -->
+<!--     <CountryTeleCode countryCode="AW" teleCode="297"/> -->
+<!--     <CountryTeleCode countryCode="AZ" teleCode="994"/> -->
+<!--     <CountryTeleCode countryCode="BA" teleCode="387"/> -->
+<!--     <CountryTeleCode countryCode="BB" teleCode="1-246"/> -->
+<!--     <CountryTeleCode countryCode="BD" teleCode="880"/> -->
+<!--     <CountryTeleCode countryCode="BE" teleCode="32"/> -->
+<!--     <CountryTeleCode countryCode="BF" teleCode="226"/> -->
+<!--     <CountryTeleCode countryCode="BG" teleCode="359"/> -->
+<!--     <CountryTeleCode countryCode="BH" teleCode="973"/> -->
+<!--     <CountryTeleCode countryCode="BI" teleCode="257"/> -->
+<!--     <CountryTeleCode countryCode="BJ" teleCode="229"/> -->
+<!--     <CountryTeleCode countryCode="BM" teleCode="1-441"/> -->
+<!--     <CountryTeleCode countryCode="BN" teleCode="673"/> -->
+<!--     <CountryTeleCode countryCode="BO" teleCode="591"/> -->
+<!--     <CountryTeleCode countryCode="BR" teleCode="55"/> -->
+<!--     <CountryTeleCode countryCode="BS" teleCode="1-242"/> -->
+<!--     <CountryTeleCode countryCode="BT" teleCode="975"/> -->
+<!--     <CountryTeleCode countryCode="BV" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="BW" teleCode="267"/> -->
+<!--     <CountryTeleCode countryCode="BY" teleCode="375"/> -->
+<!--     <CountryTeleCode countryCode="BZ" teleCode="501"/> -->
+<!--     <CountryTeleCode countryCode="CA" teleCode="1"/> -->
+<!--     <CountryTeleCode countryCode="CC" teleCode="61"/> -->
+<!--     <CountryTeleCode countryCode="CD" teleCode="243"/> -->
+<!--     <CountryTeleCode countryCode="CF" teleCode="236"/> -->
+<!--     <CountryTeleCode countryCode="CG" teleCode="242"/> -->
+<!--     <CountryTeleCode countryCode="CH" teleCode="41"/> -->
+<!--     <CountryTeleCode countryCode="CI" teleCode="225"/> -->
+<!--     <CountryTeleCode countryCode="CK" teleCode="682"/> -->
+<!--     <CountryTeleCode countryCode="CL" teleCode="56"/> -->
+<!--     <CountryTeleCode countryCode="CM" teleCode="237"/> -->
+<!--     <CountryTeleCode countryCode="CN" teleCode="86"/> -->
+<!--     <CountryTeleCode countryCode="CO" teleCode="57"/> -->
+<!--     <CountryTeleCode countryCode="CR" teleCode="506"/> -->
+<!--     <CountryTeleCode countryCode="CU" teleCode="53"/> -->
+<!--     <CountryTeleCode countryCode="CV" teleCode="238"/> -->
+<!--     <CountryTeleCode countryCode="CX" teleCode="61"/> -->
+<!--     <CountryTeleCode countryCode="CY" teleCode="357"/> -->
+<!--     <CountryTeleCode countryCode="CZ" teleCode="420"/> -->
+<!--     <CountryTeleCode countryCode="DE" teleCode="49"/> -->
+<!--     <CountryTeleCode countryCode="DJ" teleCode="253"/> -->
+<!--     <CountryTeleCode countryCode="DK" teleCode="45"/> -->
+<!--     <CountryTeleCode countryCode="DM" teleCode="1-767"/> -->
+<!--     <CountryTeleCode countryCode="DO" teleCode="809"/> -->
+<!--     <CountryTeleCode countryCode="DZ" teleCode="213"/> -->
+<!--     <CountryTeleCode countryCode="EC" teleCode="593"/> -->
+<!--     <CountryTeleCode countryCode="EE" teleCode="372"/> -->
+<!--     <CountryTeleCode countryCode="EG" teleCode="20"/> -->
+<!--     <CountryTeleCode countryCode="EH" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="ER" teleCode="291"/> -->
+<!--     <CountryTeleCode countryCode="ES" teleCode="34"/> -->
+<!--     <CountryTeleCode countryCode="ET" teleCode="251"/> -->
+<!--     <CountryTeleCode countryCode="FI" teleCode="358"/> -->
+<!--     <CountryTeleCode countryCode="FJ" teleCode="679"/> -->
+<!--     <CountryTeleCode countryCode="FK" teleCode="500"/> -->
+<!--     <CountryTeleCode countryCode="FM" teleCode="691"/> -->
+<!--     <CountryTeleCode countryCode="FO" teleCode="298"/> -->
+<!--     <CountryTeleCode countryCode="FR" teleCode="33"/> -->
+<!--     <CountryTeleCode countryCode="GA" teleCode="241"/> -->
+<!--     <CountryTeleCode countryCode="GB" teleCode="44"/> -->
+<!--     <CountryTeleCode countryCode="GD" teleCode="1-473"/> -->
+<!--     <CountryTeleCode countryCode="GE" teleCode="995"/> -->
+<!--     <CountryTeleCode countryCode="GF" teleCode="594"/> -->
+<!--     <CountryTeleCode countryCode="GH" teleCode="233"/> -->
+<!--     <CountryTeleCode countryCode="GI" teleCode="350"/> -->
+<!--     <CountryTeleCode countryCode="GL" teleCode="299"/> -->
+<!--     <CountryTeleCode countryCode="GM" teleCode="220"/> -->
+<!--     <CountryTeleCode countryCode="GN" teleCode="224"/> -->
+<!--     <CountryTeleCode countryCode="GP" teleCode="590"/> -->
+<!--     <CountryTeleCode countryCode="GQ" teleCode="240"/> -->
+<!--     <CountryTeleCode countryCode="GR" teleCode="30"/> -->
+<!--     <CountryTeleCode countryCode="GS" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="GT" teleCode="502"/> -->
+<!--     <CountryTeleCode countryCode="GU" teleCode="1-671"/> -->
+<!--     <CountryTeleCode countryCode="GW" teleCode="245"/> -->
+<!--     <CountryTeleCode countryCode="GY" teleCode="592"/> -->
+<!--     <CountryTeleCode countryCode="HK" teleCode="852"/> -->
+<!--     <CountryTeleCode countryCode="HM" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="HN" teleCode="504"/> -->
+<!--     <CountryTeleCode countryCode="HR" teleCode="385"/> -->
+<!--     <CountryTeleCode countryCode="HT" teleCode="509"/> -->
+<!--     <CountryTeleCode countryCode="HU" teleCode="36"/> -->
+<!--     <CountryTeleCode countryCode="ID" teleCode="62"/> -->
+<!--     <CountryTeleCode countryCode="IE" teleCode="353"/> -->
+<!--     <CountryTeleCode countryCode="IL" teleCode="972"/> -->
+<!--     <CountryTeleCode countryCode="IN" teleCode="91"/> -->
+<!--     <CountryTeleCode countryCode="IO" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="IQ" teleCode="964"/> -->
+<!--     <CountryTeleCode countryCode="IR" teleCode="98"/> -->
+<!--     <CountryTeleCode countryCode="IS" teleCode="354"/> -->
+<!--     <CountryTeleCode countryCode="IT" teleCode="39"/> -->
+<!--     <CountryTeleCode countryCode="JM" teleCode="1-876"/> -->
+<!--     <CountryTeleCode countryCode="JO" teleCode="962"/> -->
+<!--     <CountryTeleCode countryCode="JP" teleCode="81"/> -->
+<!--     <CountryTeleCode countryCode="KE" teleCode="254"/> -->
+<!--     <CountryTeleCode countryCode="KG" teleCode="996"/> -->
+<!--     <CountryTeleCode countryCode="KH" teleCode="855"/> -->
+<!--     <CountryTeleCode countryCode="KI" teleCode="686"/> -->
+<!--     <CountryTeleCode countryCode="KM" teleCode="269"/> -->
+<!--     <CountryTeleCode countryCode="KN" teleCode="1-869"/> -->
+<!--     <CountryTeleCode countryCode="KP" teleCode="850"/> -->
+<!--     <CountryTeleCode countryCode="KR" teleCode="82"/> -->
+<!--     <CountryTeleCode countryCode="KW" teleCode="965"/> -->
+<!--     <CountryTeleCode countryCode="KY" teleCode="1-345"/> -->
+<!--     <CountryTeleCode countryCode="KZ" teleCode="7"/> -->
+<!--     <CountryTeleCode countryCode="LA" teleCode="856"/> -->
+<!--     <CountryTeleCode countryCode="LB" teleCode="961"/> -->
+<!--     <CountryTeleCode countryCode="LC" teleCode="1-758"/> -->
+<!--     <CountryTeleCode countryCode="LI" teleCode="423"/> -->
+<!--     <CountryTeleCode countryCode="LK" teleCode="94"/> -->
+<!--     <CountryTeleCode countryCode="LR" teleCode="231"/> -->
+<!--     <CountryTeleCode countryCode="LS" teleCode="266"/> -->
+<!--     <CountryTeleCode countryCode="LT" teleCode="370"/> -->
+<!--     <CountryTeleCode countryCode="LU" teleCode="352"/> -->
+<!--     <CountryTeleCode countryCode="LV" teleCode="371"/> -->
+<!--     <CountryTeleCode countryCode="LY" teleCode="218"/> -->
+<!--     <CountryTeleCode countryCode="MA" teleCode="212"/> -->
+<!--     <CountryTeleCode countryCode="MC" teleCode="377"/> -->
+<!--     <CountryTeleCode countryCode="MD" teleCode="373"/> -->
+<!--     <CountryTeleCode countryCode="MG" teleCode="261"/> -->
+<!--     <CountryTeleCode countryCode="MH" teleCode="692"/> -->
+<!--     <CountryTeleCode countryCode="MK" teleCode="389"/> -->
+<!--     <CountryTeleCode countryCode="ML" teleCode="223"/> -->
+<!--     <CountryTeleCode countryCode="MM" teleCode="95"/> -->
+<!--     <CountryTeleCode countryCode="MN" teleCode="976"/> -->
+<!--     <CountryTeleCode countryCode="MO" teleCode="853"/> -->
+<!--     <CountryTeleCode countryCode="MP" teleCode="670"/> -->
+<!--     <CountryTeleCode countryCode="MQ" teleCode="596"/> -->
+<!--     <CountryTeleCode countryCode="MR" teleCode="222"/> -->
+<!--     <CountryTeleCode countryCode="MS" teleCode="1-664"/> -->
+<!--     <CountryTeleCode countryCode="MT" teleCode="356"/> -->
+<!--     <CountryTeleCode countryCode="MU" teleCode="230"/> -->
+<!--     <CountryTeleCode countryCode="MV" teleCode="960"/> -->
+<!--     <CountryTeleCode countryCode="MW" teleCode="265"/> -->
+<!--     <CountryTeleCode countryCode="MX" teleCode="52"/> -->
+<!--     <CountryTeleCode countryCode="MY" teleCode="60"/> -->
+<!--     <CountryTeleCode countryCode="MZ" teleCode="258"/> -->
+<!--     <CountryTeleCode countryCode="NA" teleCode="264"/> -->
+<!--     <CountryTeleCode countryCode="NC" teleCode="687"/> -->
+<!--     <CountryTeleCode countryCode="NE" teleCode="227"/> -->
+<!--     <CountryTeleCode countryCode="NF" teleCode="672"/> -->
+<!--     <CountryTeleCode countryCode="NG" teleCode="234"/> -->
+<!--     <CountryTeleCode countryCode="NI" teleCode="505"/> -->
+<!--     <CountryTeleCode countryCode="NL" teleCode="31"/> -->
+<!--     <CountryTeleCode countryCode="NO" teleCode="47"/> -->
+<!--     <CountryTeleCode countryCode="NP" teleCode="977"/> -->
+<!--     <CountryTeleCode countryCode="NR" teleCode="674"/> -->
+<!--     <CountryTeleCode countryCode="NU" teleCode="683"/> -->
+<!--     <CountryTeleCode countryCode="NZ" teleCode="64"/> -->
+<!--     <CountryTeleCode countryCode="OM" teleCode="968"/> -->
+<!--     <CountryTeleCode countryCode="PA" teleCode="507"/> -->
+<!--     <CountryTeleCode countryCode="PE" teleCode="51"/> -->
+<!--     <CountryTeleCode countryCode="PF" teleCode="689"/> -->
+<!--     <CountryTeleCode countryCode="PG" teleCode="675"/> -->
+<!--     <CountryTeleCode countryCode="PH" teleCode="63"/> -->
+<!--     <CountryTeleCode countryCode="PK" teleCode="92"/> -->
+<!--     <CountryTeleCode countryCode="PL" teleCode="48"/> -->
+<!--     <CountryTeleCode countryCode="PM" teleCode="508"/> -->
+<!--     <CountryTeleCode countryCode="PN" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="PR" teleCode="1-787"/> -->
+<!--     <CountryTeleCode countryCode="PT" teleCode="351"/> -->
+<!--     <CountryTeleCode countryCode="PW" teleCode="680"/> -->
+<!--     <CountryTeleCode countryCode="PY" teleCode="595"/> -->
+<!--     <CountryTeleCode countryCode="QA" teleCode="974"/> -->
+<!--     <CountryTeleCode countryCode="RE" teleCode="262"/> -->
+<!--     <CountryTeleCode countryCode="RO" teleCode="40"/> -->
+<!--     <CountryTeleCode countryCode="RU" teleCode="7"/> -->
+<!--     <CountryTeleCode countryCode="RW" teleCode="250"/> -->
+<!--     <CountryTeleCode countryCode="SA" teleCode="966"/> -->
+<!--     <CountryTeleCode countryCode="SB" teleCode="677"/> -->
+<!--     <CountryTeleCode countryCode="SC" teleCode="248"/> -->
+<!--     <CountryTeleCode countryCode="SD" teleCode="249"/> -->
+<!--     <CountryTeleCode countryCode="SE" teleCode="46"/> -->
+<!--     <CountryTeleCode countryCode="SG" teleCode="65"/> -->
+<!--     <CountryTeleCode countryCode="SH" teleCode="290"/> -->
+<!--     <CountryTeleCode countryCode="SI" teleCode="386"/> -->
+<!--     <CountryTeleCode countryCode="SJ" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="SK" teleCode="421"/> -->
+<!--     <CountryTeleCode countryCode="SL" teleCode="232"/> -->
+<!--     <CountryTeleCode countryCode="SM" teleCode="378"/> -->
+<!--     <CountryTeleCode countryCode="SN" teleCode="221"/> -->
+<!--     <CountryTeleCode countryCode="SO" teleCode="252"/> -->
+<!--     <CountryTeleCode countryCode="SR" teleCode="597"/> -->
+<!--     <CountryTeleCode countryCode="ST" teleCode="239"/> -->
+<!--     <CountryTeleCode countryCode="SV" teleCode="503"/> -->
+<!--     <CountryTeleCode countryCode="SY" teleCode="963"/> -->
+<!--     <CountryTeleCode countryCode="SZ" teleCode="268"/> -->
+<!--     <CountryTeleCode countryCode="TC" teleCode="1-649"/> -->
+<!--     <CountryTeleCode countryCode="TD" teleCode="235"/> -->
+<!--     <CountryTeleCode countryCode="TF" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="TG" teleCode="228"/> -->
+<!--     <CountryTeleCode countryCode="TH" teleCode="66"/> -->
+<!--     <CountryTeleCode countryCode="TJ" teleCode="992"/> -->
+<!--     <CountryTeleCode countryCode="TK" teleCode="690"/> -->
+<!--     <CountryTeleCode countryCode="TM" teleCode="993"/> -->
+<!--     <CountryTeleCode countryCode="TN" teleCode="216"/> -->
+<!--     <CountryTeleCode countryCode="TO" teleCode="676"/> -->
+<!--     <CountryTeleCode countryCode="TP" teleCode="670"/> -->
+<!--     <CountryTeleCode countryCode="TR" teleCode="90"/> -->
+<!--     <CountryTeleCode countryCode="TT" teleCode="1-868"/> -->
+<!--     <CountryTeleCode countryCode="TV" teleCode="688"/> -->
+<!--     <CountryTeleCode countryCode="TW" teleCode="886"/> -->
+<!--     <CountryTeleCode countryCode="TZ" teleCode="255"/> -->
+<!--     <CountryTeleCode countryCode="UA" teleCode="380"/> -->
+<!--     <CountryTeleCode countryCode="UG" teleCode="256"/> -->
+<!--     <CountryTeleCode countryCode="UM" teleCode=""/> -->
+<!--     <CountryTeleCode countryCode="US" teleCode="1"/> -->
+<!--     <CountryTeleCode countryCode="UY" teleCode="598"/> -->
+<!--     <CountryTeleCode countryCode="UZ" teleCode="998"/> -->
+<!--     <CountryTeleCode countryCode="VA" teleCode="39"/> -->
+<!--     <CountryTeleCode countryCode="VC" teleCode="1-784"/> -->
+<!--     <CountryTeleCode countryCode="VE" teleCode="58"/> -->
+<!--     <CountryTeleCode countryCode="VG" teleCode="1-284"/> -->
+<!--     <CountryTeleCode countryCode="VI" teleCode="1-340"/> -->
+<!--     <CountryTeleCode countryCode="VN" teleCode="84"/> -->
+<!--     <CountryTeleCode countryCode="VU" teleCode="678"/> -->
+<!--     <CountryTeleCode countryCode="WF" teleCode="681"/> -->
+<!--     <CountryTeleCode countryCode="WS" teleCode="684"/> -->
+<!--     <CountryTeleCode countryCode="YE" teleCode="967"/> -->
+<!--     <CountryTeleCode countryCode="YT" teleCode="269"/> -->
+<!--     <CountryTeleCode countryCode="YU" teleCode="381"/> -->
+<!--     <CountryTeleCode countryCode="ZA" teleCode="27"/> -->
+<!--     <CountryTeleCode countryCode="ZM" teleCode="260"/> -->
+<!--     <CountryTeleCode countryCode="ZW" teleCode="263"/> -->
 </entity-engine-xml>
