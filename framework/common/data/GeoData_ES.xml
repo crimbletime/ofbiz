@@ -20,77 +20,77 @@ under the License.
 
 <entity-engine-xml>
 <!-- Comunidades Autónomas -->
-    <Geo abbreviation="AN" geoCode="AN" geoId="ES-AN" geoName="Andalucía" geoTypeId="REGION"/>
-    <Geo abbreviation="AR" geoCode="AR" geoId="ES-AR" geoName="Aragón" geoTypeId="REGION"/>
-    <Geo abbreviation="O" geoCode="O" geoId="ES-AS" geoName="Oviedo" geoTypeId="REGION"/>
-    <Geo abbreviation="CN" geoCode="CN" geoId="ES-CN" geoName="Canarias" geoTypeId="REGION"/>
-    <Geo abbreviation="S" geoCode="S" geoId="ES-CAN" geoName="Cantabria" geoTypeId="REGION"/>
-    <Geo abbreviation="CM" geoCode="CM" geoId="ES-CM" geoName="Castilla-La Mancha" geoTypeId="REGION"/>
-    <Geo abbreviation="CL" geoCode="CL" geoId="ES-CL" geoName="Castilla y León" geoTypeId="REGION"/>
-    <Geo abbreviation="CT" geoCode="CT" geoId="ES-CT" geoName="Cataluña" geoTypeId="REGION"/>
-    <Geo abbreviation="EX" geoCode="EX" geoId="ES-EX" geoName="Extremadura" geoTypeId="REGION"/>
-    <Geo abbreviation="GA" geoCode="GA" geoId="ES-GA" geoName="Galicia" geoTypeId="REGION"/>
-    <Geo abbreviation="IB" geoCode="IB" geoId="ES-IB" geoName="Islas Baleares" geoTypeId="REGION"/>
-    <Geo abbreviation="LO" geoCode="LO" geoId="ES-LR" geoName="La Rioja" geoTypeId="REGION"/>
-    <Geo abbreviation="M" geoCode="M" geoId="ES-MAD" geoName="Madrid" geoTypeId="REGION"/>
-    <Geo abbreviation="MU" geoCode="MU" geoId="ES-MUR" geoName="Región de Murcia" geoTypeId="REGION"/>
-    <Geo abbreviation="NA" geoCode="NA" geoId="ES-NAV" geoName="Navarra" geoTypeId="REGION"/>
-    <Geo abbreviation="VC" geoCode="VC" geoId="ES-VC" geoName="Comunidad Valenciana" geoTypeId="REGION"/>
-    <Geo abbreviation="PV" geoCode="PV" geoId="ES-PV" geoName="País Vasco" geoTypeId="REGION"/>
+<!--     <Geo abbreviation="AN" geoCode="AN" geoId="ES-AN" geoName="Andalucía" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="AR" geoCode="AR" geoId="ES-AR" geoName="Aragón" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="O" geoCode="O" geoId="ES-AS" geoName="Oviedo" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="CN" geoCode="CN" geoId="ES-CN" geoName="Canarias" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="S" geoCode="S" geoId="ES-CAN" geoName="Cantabria" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="CM" geoCode="CM" geoId="ES-CM" geoName="Castilla-La Mancha" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="CL" geoCode="CL" geoId="ES-CL" geoName="Castilla y León" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="CT" geoCode="CT" geoId="ES-CT" geoName="Cataluña" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="EX" geoCode="EX" geoId="ES-EX" geoName="Extremadura" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="GA" geoCode="GA" geoId="ES-GA" geoName="Galicia" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="IB" geoCode="IB" geoId="ES-IB" geoName="Islas Baleares" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="LO" geoCode="LO" geoId="ES-LR" geoName="La Rioja" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="M" geoCode="M" geoId="ES-MAD" geoName="Madrid" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="MU" geoCode="MU" geoId="ES-MUR" geoName="Región de Murcia" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="NA" geoCode="NA" geoId="ES-NAV" geoName="Navarra" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="VC" geoCode="VC" geoId="ES-VC" geoName="Comunidad Valenciana" geoTypeId="REGION"/> -->
+<!--     <Geo abbreviation="PV" geoCode="PV" geoId="ES-PV" geoName="País Vasco" geoTypeId="REGION"/> -->
 
 <!-- Provincias -->
-    <Geo abbreviation="VI" geoCode="VI" geoId="ES-VI" geoName="Álava" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="AB" geoCode="AB" geoId="ES-AB" geoName="Albacete" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="A" geoCode="A" geoId="ES-A" geoName="Alicante" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="AL" geoCode="AL" geoId="ES-AL" geoName="Almería" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="O" geoCode="O" geoId="ES-O" geoName="Asturias" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="AV" geoCode="AV" geoId="ES-AV" geoName="Ávila" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="BA" geoCode="BA" geoId="ES-BA" geoName="Badajoz" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="PM" geoCode="PM" geoId="ES-PM" geoName="Islas Baleares" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="B" geoCode="B" geoId="ES-B" geoName="Barcelona" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="BU" geoCode="BU" geoId="ES-BU" geoName="Burgos" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="CC" geoCode="CC" geoId="ES-CC" geoName="Cáceres" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="CA" geoCode="CA" geoId="ES-CA" geoName="Cádiz" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="S" geoCode="S" geoId="ES-S" geoName="Cantabria" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="CS" geoCode="CS" geoId="ES-CS" geoName="Castellón" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="CE" geoCode="CE" geoId="ES-CE" geoName="Ceuta" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="CR" geoCode="CR" geoId="ES-CR" geoName="Ciudad Real" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="CO" geoCode="CO" geoId="ES-CO" geoName="Córdoba" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="CU" geoCode="CU" geoId="ES-CU" geoName="Cuenca" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="GI" geoCode="GI" geoId="ES-GI" geoName="Gerona" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="GR" geoCode="GR" geoId="ES-GR" geoName="Granada" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="GU" geoCode="GU" geoId="ES-GU" geoName="Guadalajara" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="SS" geoCode="SS" geoId="ES-SS" geoName="Guipúzcoa" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="H" geoCode="H" geoId="ES-H" geoName="Huelva" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="HU" geoCode="HU" geoId="ES-HU" geoName="Huesca" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="J" geoCode="J" geoId="ES-J" geoName="Jaén" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="C" geoCode="C" geoId="ES-C" geoName="La Coruña" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="LO" geoCode="LO" geoId="ES-LO" geoName="Logroño" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="GC" geoCode="GC" geoId="ES-GC" geoName="Las Palmas" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="LE" geoCode="LE" geoId="ES-LE" geoName="León" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="L" geoCode="L" geoId="ES-L" geoName="Lérida" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="LU" geoCode="LU" geoId="ES-LU" geoName="Lugo" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="M" geoCode="M" geoId="ES-M" geoName="Madrid" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="MA" geoCode="MA" geoId="ES-MA" geoName="Málaga" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="ML" geoCode="ML" geoId="ES-ML" geoName="Melilla" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="MU" geoCode="MU" geoId="ES-MU" geoName="Murcia" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="NA" geoCode="NA" geoId="ES-NA" geoName="Navarra" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="OR" geoCode="OR" geoId="ES-OR" geoName="Orense" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="P" geoCode="P" geoId="ES-P" geoName="Palencia" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="PO" geoCode="PO" geoId="ES-PO" geoName="Pontevedra" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="SA" geoCode="SA" geoId="ES-SA" geoName="Salamanca" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="TF" geoCode="TF" geoId="ES-TF" geoName="Santa Cruz de Tenerife" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="SG" geoCode="SG" geoId="ES-SG" geoName="Segovia" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="SE" geoCode="SE" geoId="ES-SE" geoName="Sevilla" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="SO" geoCode="SO" geoId="ES-SO" geoName="Soria" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="T" geoCode="T" geoId="ES-T" geoName="Tarragona" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="TE" geoCode="TE" geoId="ES-TE" geoName="Teruel" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="TO" geoCode="TO" geoId="ES-TO" geoName="Toledo" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="V" geoCode="V" geoId="ES-V" geoName="Valencia" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="VA" geoCode="VA" geoId="ES-VA" geoName="Valladolid" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="BI" geoCode="BI" geoId="ES-BI" geoName="Vizcaya" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="ZA" geoCode="ZA" geoId="ES-ZA" geoName="Zamora" geoTypeId="PROVINCE"/>
-    <Geo abbreviation="Z" geoCode="Z" geoId="ES-Z" geoName="Zaragoza" geoTypeId="PROVINCE"/>
+<!--     <Geo abbreviation="VI" geoCode="VI" geoId="ES-VI" geoName="Álava" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="AB" geoCode="AB" geoId="ES-AB" geoName="Albacete" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="A" geoCode="A" geoId="ES-A" geoName="Alicante" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="AL" geoCode="AL" geoId="ES-AL" geoName="Almería" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="O" geoCode="O" geoId="ES-O" geoName="Asturias" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="AV" geoCode="AV" geoId="ES-AV" geoName="Ávila" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="BA" geoCode="BA" geoId="ES-BA" geoName="Badajoz" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="PM" geoCode="PM" geoId="ES-PM" geoName="Islas Baleares" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="B" geoCode="B" geoId="ES-B" geoName="Barcelona" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="BU" geoCode="BU" geoId="ES-BU" geoName="Burgos" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="CC" geoCode="CC" geoId="ES-CC" geoName="Cáceres" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="CA" geoCode="CA" geoId="ES-CA" geoName="Cádiz" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="S" geoCode="S" geoId="ES-S" geoName="Cantabria" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="CS" geoCode="CS" geoId="ES-CS" geoName="Castellón" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="CE" geoCode="CE" geoId="ES-CE" geoName="Ceuta" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="CR" geoCode="CR" geoId="ES-CR" geoName="Ciudad Real" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="CO" geoCode="CO" geoId="ES-CO" geoName="Córdoba" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="CU" geoCode="CU" geoId="ES-CU" geoName="Cuenca" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="GI" geoCode="GI" geoId="ES-GI" geoName="Gerona" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="GR" geoCode="GR" geoId="ES-GR" geoName="Granada" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="GU" geoCode="GU" geoId="ES-GU" geoName="Guadalajara" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="SS" geoCode="SS" geoId="ES-SS" geoName="Guipúzcoa" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="H" geoCode="H" geoId="ES-H" geoName="Huelva" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="HU" geoCode="HU" geoId="ES-HU" geoName="Huesca" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="J" geoCode="J" geoId="ES-J" geoName="Jaén" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="C" geoCode="C" geoId="ES-C" geoName="La Coruña" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="LO" geoCode="LO" geoId="ES-LO" geoName="Logroño" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="GC" geoCode="GC" geoId="ES-GC" geoName="Las Palmas" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="LE" geoCode="LE" geoId="ES-LE" geoName="León" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="L" geoCode="L" geoId="ES-L" geoName="Lérida" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="LU" geoCode="LU" geoId="ES-LU" geoName="Lugo" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="M" geoCode="M" geoId="ES-M" geoName="Madrid" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="MA" geoCode="MA" geoId="ES-MA" geoName="Málaga" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="ML" geoCode="ML" geoId="ES-ML" geoName="Melilla" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="MU" geoCode="MU" geoId="ES-MU" geoName="Murcia" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="NA" geoCode="NA" geoId="ES-NA" geoName="Navarra" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="OR" geoCode="OR" geoId="ES-OR" geoName="Orense" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="P" geoCode="P" geoId="ES-P" geoName="Palencia" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="PO" geoCode="PO" geoId="ES-PO" geoName="Pontevedra" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="SA" geoCode="SA" geoId="ES-SA" geoName="Salamanca" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="TF" geoCode="TF" geoId="ES-TF" geoName="Santa Cruz de Tenerife" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="SG" geoCode="SG" geoId="ES-SG" geoName="Segovia" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="SE" geoCode="SE" geoId="ES-SE" geoName="Sevilla" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="SO" geoCode="SO" geoId="ES-SO" geoName="Soria" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="T" geoCode="T" geoId="ES-T" geoName="Tarragona" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="TE" geoCode="TE" geoId="ES-TE" geoName="Teruel" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="TO" geoCode="TO" geoId="ES-TO" geoName="Toledo" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="V" geoCode="V" geoId="ES-V" geoName="Valencia" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="VA" geoCode="VA" geoId="ES-VA" geoName="Valladolid" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="BI" geoCode="BI" geoId="ES-BI" geoName="Vizcaya" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="ZA" geoCode="ZA" geoId="ES-ZA" geoName="Zamora" geoTypeId="PROVINCE"/> -->
+<!--     <Geo abbreviation="Z" geoCode="Z" geoId="ES-Z" geoName="Zaragoza" geoTypeId="PROVINCE"/> -->
     <!-- Relaciones -->
     <!-- País Vasco -->
     <GeoAssoc geoIdTo="ES-VI" geoId="ES-PV" geoAssocTypeId="REGIONS"/>
