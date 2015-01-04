@@ -287,6 +287,8 @@ under the License.
     <Uom abbreviation="J" description="Joule (absolute)" uomId="EN_J" uomTypeId="ENERGY_MEASURE"/>
     <Uom abbreviation="Kw" description="Kilowatt" uomId="EN_Kw" uomTypeId="ENERGY_MEASURE"/>
     <Uom abbreviation="w" description="Watt" uomId="EN_w" uomTypeId="ENERGY_MEASURE"/>
+   <Uom abbreviation="kWh" description="Kilowathour" uomId="EN_kwh" uomTypeId="ENERGY_MEASURE"/>
+   <Uom abbreviation="kvarh" description="Kilovoltampere reactive hour" uomId="EN_kvarh" uomTypeId="ENERGY_MEASURE"/>
 
     <UomConversion uomId="EN_cal15" uomIdTo="EN_J" conversionFactor="4.1855"/>
     <UomConversion uomId="EN_Kw" uomIdTo="EN_w" conversionFactor="1000"/>

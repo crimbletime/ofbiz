@@ -362,6 +362,7 @@ under the License.
     <ProductFeatureType description="Year Made" hasTable="N" parentTypeId="" productFeatureTypeId="YEAR_MADE"/>
 
     <ProductMeterType description="Speedometer" productMeterTypeId="SPEEDOMETER"/>
+    <ProductMeterType description="Electricity Meter" productMeterTypeId="ELECTRICITYMETER"/>
     <ProductMeterType description="Tachometer" productMeterTypeId="TACHOMETER"/>
     <ProductMeterType description="Distance Meter" productMeterTypeId="DISTANCE"/>
     <ProductMeterType description="Motor Time Meter" productMeterTypeId="MOTOR_TIME"/>
